@@ -1,0 +1,28 @@
+.marquee-container {
+    background-color: #ff6600; /* El naranja de la imagen */
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    padding: 10px 0;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+.marquee-content {
+    display: inline-block;
+    animation: marquee 30s linear infinite;
+}
+
+.marquee-content span {
+    padding-right: 10px; /* Espacio entre cada repetición */
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
