@@ -26,3 +26,13 @@
         transform: translateX(-50%);
     }
 }
+
+/* Banners */
+.banner-container {
+    overflow: hidden;
+    line-height: 0; /* Elimina un pequeño espacio que a veces queda debajo de las imágenes */
+}
+
+.banner-container img {
+    display: block;
+}

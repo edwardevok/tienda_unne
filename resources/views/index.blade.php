@@ -47,7 +47,8 @@
 
         </div>
     </nav>
-    {{-- Barra de promociones --}}
+
+    {{-- Maquesina de promociones --}}
     <div class="marquee-container">
         <div class="marquee-content">
             <span>
@@ -73,6 +74,20 @@
         </div>
     </div>
 
+    {{-- Banner Principal --}}
+    {{-- Sección Hero Banner --}}
+    <section class="banner-container w-100">
+        {{-- Banner para Pantallas Grandes (Desktop) --}}
+        <div class="d-none d-md-block w-100">
+            <img src="{{ asset('img/banner.png') }}" class="img-fluid w-100" alt="Tienda UNNE - Identidad que nos une"
+                style="object-fit: cover;">
+        </div>
+
+        {{-- Banner para Móviles (Mobile) --}}
+        <div class="d-block d-md-none w-100">
+            <img src="{{ asset('img/banner_movil.png') }}" class="img-fluid w-100" alt="Tienda UNNE Móvil">
+        </div>
+    </section>
 
 
 
