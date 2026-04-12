@@ -75,7 +75,6 @@
     </div>
 
     {{-- Banner Principal --}}
-    {{-- Sección Hero Banner --}}
     <section class="banner-container w-100">
         {{-- Banner para Pantallas Grandes (Desktop) --}}
         <div class="d-none d-md-block w-100">
@@ -89,13 +88,54 @@
         </div>
     </section>
 
+    <section class="container my-5 py-4">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-11">
+
+                {{-- Título: Agregamos la clase text-center --}}
+                <h2 class="display-4 fw-bold mb-4 text-center" style="color: #021A54; min-height: 1.2em;">
+                    Tienda UNNE es <span id="typewriter"></span>
+                </h2>
+
+                {{-- Texto de Presentación --}}
+                <div class="presentation-text">
+                    <p>La Tienda UNNE nace para fortalecer el sentido de pertenencia de toda la comunidad universitaria,
+                        ofreciendo productos que reflejan nuestra identidad. Como universidad a la vanguardia en
+                        tecnología y desarrollo sustentable, cada artículo representa innovación, compromiso y cuidado
+                        del ambiente. Nuestra tienda virtual reúne indumentaria y accesorios pensados para llevar el
+                        orgullo UNNE en el día a día. Más que una tienda, es una forma de conectar con los valores de
+                        una institución que mira hacia el futuro.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
+    <script>
+        var app = document.getElementById('typewriter');
+
+        var typewriter = new Typewriter(app, {
+            loop: true,
+            delay: 75,
+        });
+
+        typewriter
+            .pauseFor(500)
+            .typeString('<span style="color: #FF6600;">identidad</span>')
+            .pauseFor(2000)
+            .deleteAll()
+            .typeString('<span style="color: #FF6600;">comunidad</span>')
+            .pauseFor(2000)
+            .deleteAll()
+            .typeString('<span style="color: #FF6600;">futuro</span>')
+            .pauseFor(2000)
+            .start();
     </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
