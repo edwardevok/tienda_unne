@@ -96,19 +96,31 @@
 
     
     {{-- Sección de Presentación --}}
-<div class="py-5" style="background-color: #E6E6E6;">
-    
+<div class="py-5" style="background-color: #c3def3;">
     <div class="container">
-        <div class="row">
-            <div class="col-12">
+        
+        {{-- align-items-center es la clase que centra verticalmente el contenido de las columnas --}}
+        <div class="row align-items-center">
 
-                <h1 class="display-4 fw-bold mb-4 text-center" style="color: #021A54; min-height: 1.2em;">
+            {{-- COLUMNA 1: LA IMAGEN (Ocupa 5 de 12 en PC) --}}
+            {{-- text-center centra la imagen horizontalmente. mb-4 da un margen abajo en celulares --}}
+            <div class="col-12 col-lg-5 text-center mb-4 mb-lg-0 d-none d-lg-block">
+                {{-- Puse una imagen de relleno, acordate de cambiar el src por tu asset --}}
+                <img src="{{ asset('img/une_circulo.png') }}" alt="Comunidad UNNE" class="img-fluid rounded" style="max-height: 350px; object-fit: cover;">
+            </div>
+
+            {{-- COLUMNA 2: EL TEXTO (Más grande, ocupa 7 de 12 en PC) --}}
+            <div class="col-12 col-lg-7">
+
+                {{-- Le saqué el text-center al título para que quede alineado a la izquierda junto a la imagen --}}
+                <h1 class="display-4 fw-bold mb-4" style="color: #021A54; min-height: 1.2em;">
                     Tienda UNNE es <span id="typewriter"></span>
                 </h1>
                 
-                {{-- Texto de Presentación centrado --}}
-                <div class="presentation-text text-center">
-                    <p>
+                {{-- Texto de Presentación --}}
+                <div class="presentation-text">
+                    {{-- Volví a agregarle el 'lead' y los estilos para que se lea mejor --}}
+                    <p class="lead" style="line-height: 1.8; margin-bottom: 0;">
                         La Tienda UNNE nace para fortalecer el sentido de pertenencia de toda la comunidad universitaria,
                         ofreciendo productos que reflejan nuestra identidad. Como universidad a la vanguardia en
                         tecnología y desarrollo sustentable, cada artículo representa innovación, compromiso y cuidado
@@ -119,9 +131,9 @@
                 </div>
 
             </div>
+
         </div>
     </div>
-    
 </div>
 
     {{-- Sección de Productos --}}
