@@ -93,7 +93,9 @@
 
     
     {{-- Sección de Presentación --}}
-    <div class="container my-5 py-4">
+<div class="py-5" style="background-color: #E6E6E6;">
+    
+    <div class="container">
         <div class="row">
             <div class="col-12">
 
@@ -103,7 +105,7 @@
                 
                 {{-- Texto de Presentación centrado --}}
                 <div class="presentation-text text-center">
-                    <p class="lead" style="color: #4a5568; line-height: 1.8;">
+                    <p class="lead" style="color: #4a5568; line-height: 1.8; margin-bottom: 0;">
                         La Tienda UNNE nace para fortalecer el sentido de pertenencia de toda la comunidad universitaria,
                         ofreciendo productos que reflejan nuestra identidad. Como universidad a la vanguardia en
                         tecnología y desarrollo sustentable, cada artículo representa innovación, compromiso y cuidado
@@ -116,9 +118,11 @@
             </div>
         </div>
     </div>
+    
+</div>
 
     {{-- Sección de Productos --}}
-    <div class="container mb-5">
+    <div class="container mb-5 mt-5">
         
         {{-- Metí el título adentro del mismo container para asegurar que mantenga la misma línea --}}
         <h2 class="display-4 fw-bold mb-5 text-center" style="color: #021A54; min-height: 1.2em;">Categorías</h2>
