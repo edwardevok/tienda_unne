@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('css/index.css') }}">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
@@ -75,6 +76,8 @@
     </div>
 
     {{-- Banner Principal --}}
+    
+
     <section class="banner-container w-100">
         {{-- Banner para Pantallas Grandes (Desktop) --}}
         <div class="d-none d-md-block w-100">
@@ -88,28 +91,105 @@
         </div>
     </section>
 
-    <section class="container my-5 py-4">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-11">
+    
+    {{-- Sección de Presentación --}}
+    <div class="container my-5 py-4">
+        <div class="row">
+            <div class="col-12">
 
-                {{-- Título: Agregamos la clase text-center --}}
-                <h2 class="display-4 fw-bold mb-4 text-center" style="color: #021A54; min-height: 1.2em;">
+                <h1 class="display-4 fw-bold mb-4 text-center" style="color: #021A54; min-height: 1.2em;">
                     Tienda UNNE es <span id="typewriter"></span>
-                </h2>
-
-                {{-- Texto de Presentación --}}
-                <div class="presentation-text">
-                    <p>La Tienda UNNE nace para fortalecer el sentido de pertenencia de toda la comunidad universitaria,
+                </h1>
+                
+                {{-- Texto de Presentación centrado --}}
+                <div class="presentation-text text-center">
+                    <p class="lead" style="color: #4a5568; line-height: 1.8;">
+                        La Tienda UNNE nace para fortalecer el sentido de pertenencia de toda la comunidad universitaria,
                         ofreciendo productos que reflejan nuestra identidad. Como universidad a la vanguardia en
                         tecnología y desarrollo sustentable, cada artículo representa innovación, compromiso y cuidado
                         del ambiente. Nuestra tienda virtual reúne indumentaria y accesorios pensados para llevar el
                         orgullo UNNE en el día a día. Más que una tienda, es una forma de conectar con los valores de
-                        una institución que mira hacia el futuro.</p>
+                        una institución que mira hacia el futuro.
+                    </p>
                 </div>
+
             </div>
         </div>
-    </section>
+    </div>
 
+    {{-- Sección de Productos --}}
+    <div class="container mb-5">
+        
+        {{-- Metí el título adentro del mismo container para asegurar que mantenga la misma línea --}}
+        <h2 class="display-4 fw-bold mb-5 text-center" style="color: #021A54; min-height: 1.2em;">Categorías</h2>
+        
+        <div class="row g-4">
+
+            <div class="col-12 col-md-6 col-lg-3">
+    <div class="card h-100 shadow-sm border-0">
+        
+        <div class="text-center pt-4">
+            <span class="material-symbols-rounded" style="font-size: 80px; color: #021A54;">
+                apparel
+            </span>
+        </div>
+
+        <div class="card-body d-flex flex-column text-center">
+            <h5 class="card-title fw-bold" style="color: #021A54;">Indumentaria</h5>
+        </div>
+        
+    </div>
+</div>
+
+             <div class="col-12 col-md-6 col-lg-3">
+    <div class="card h-100 shadow-sm border-0">
+        
+        <div class="text-center pt-4">
+            <span class="material-symbols-rounded" style="color: #021A54; font-size: 80px;">personal_bag</span>
+        </div>
+
+        <div class="card-body d-flex flex-column text-center">
+            <h5 class="card-title fw-bold" style="color: #021A54;">Accsesorios</h5>
+        </div>
+        
+    </div>
+</div>
+
+             <div class="col-12 col-md-6 col-lg-3">
+    <div class="card h-100 shadow-sm border-0">
+        
+        <div class="text-center pt-4">
+            <span class="material-symbols-rounded" style="font-size: 80px; color: #021A54;">
+                ink_pen
+            </span>
+        </div>
+
+        <div class="card-body d-flex flex-column text-center">
+            <h5 class="card-title fw-bold" style="color: #021A54;">Útiles</h5>
+        </div>
+        
+    </div>
+</div>
+
+             <div class="col-12 col-md-6 col-lg-3">
+    <div class="card h-100 shadow-sm border-0">
+        
+        <div class="text-center pt-4">
+            <span class="material-symbols-rounded" style="font-size: 80px; color: #021A54;">
+                water_bottle
+            </span>
+        </div>
+
+        <div class="card-body d-flex flex-column text-center">
+            <h5 class="card-title fw-bold" style="color: #021A54;">Botellas y termos</h5>
+        </div>
+        
+    </div>
+</div>
+
+        </div>
+    </div>
+    
 
 
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
