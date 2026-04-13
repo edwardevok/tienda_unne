@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Document</title>
+    <title>Tienda UNNE</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('css/index.css') }}">
@@ -96,7 +96,7 @@
 
     
     {{-- Sección de Presentación --}}
-<div class="py-5" style="background-color: #c3def3;">
+<div class="py-5" style="background-color: #b8d6f1;">
     <div class="container">
         
         {{-- align-items-center es la clase que centra verticalmente el contenido de las columnas --}}
@@ -106,7 +106,7 @@
             {{-- text-center centra la imagen horizontalmente. mb-4 da un margen abajo en celulares --}}
             <div class="col-12 col-lg-5 text-center mb-4 mb-lg-0 d-none d-lg-block">
                 {{-- Puse una imagen de relleno, acordate de cambiar el src por tu asset --}}
-                <img src="{{ asset('img/une_circulo.png') }}" alt="Comunidad UNNE" class="img-fluid rounded" style="max-height: 350px; object-fit: cover;">
+                <img src="{{ asset('img/img1.png') }}" alt="Comunidad UNNE" class="img-fluid rounded" style="max-height: 350px; object-fit: cover;">
             </div>
 
             {{-- COLUMNA 2: EL TEXTO (Más grande, ocupa 7 de 12 en PC) --}}
