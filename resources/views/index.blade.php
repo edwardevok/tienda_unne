@@ -55,22 +55,22 @@
     {{-- Maquesina de promociones --}}
     <div class="marquee-container">
         <div class="marquee-content">
-            <span>
-                🎓 <b>Si sos estudiante de la UNNE tenés un 25% OFF</b> |
+            <span class="marquesina">
+                🎓 Si sos estudiante de la UNNE tenés un 25% OFF |
                 🚚 Envíos a todo el país |
                 💳 10% OFF pagando con Mercado Pago |
                 🏫 Hacé tu compra y retirá en el Campus |
-                🎓 <b>Si sos estudiante de la UNNE tenés un 25% OFF</b> |
+                🎓 Si sos estudiante de la UNNE tenés un 25% OFF |
                 🚚 Envíos a todo el país |
                 💳 10% OFF pagando con Mercado Pago |
                 🏫 Hacé tu compra y retirá en el Campus |
             </span>
-            <span>
-                🎓 <b>Si sos estudiante de la UNNE tenés un 25% OFF</b> |
+            <span class="marquesina">
+                🎓 Si sos estudiante de la UNNE tenés un 25% OFF |
                 🚚 Envíos a todo el país |
                 💳 10% OFF pagando con Mercado Pago |
                 🏫 Hacé tu compra y retirá en el Campus |
-                🎓 <b>Si sos estudiante de la UNNE tenés un 25% OFF</b> |
+                🎓 Si sos estudiante de la UNNE tenés un 25% OFF |
                 🚚 Envíos a todo el país |
                 💳 10% OFF pagando con Mercado Pago |
                 🏫 Hacé tu compra y retirá en el Campus |
@@ -112,15 +112,16 @@
             {{-- COLUMNA 2: EL TEXTO (Más grande, ocupa 7 de 12 en PC) --}}
             <div class="col-12 col-lg-7">
 
-                {{-- Le saqué el text-center al título para que quede alineado a la izquierda junto a la imagen --}}
-                <h1 class="display-4 fw-bold mb-4" style="color: #021A54; min-height: 1.2em;">
-                    Tienda UNNE es <span id="typewriter"></span>
-                </h1>
+              <h1 class="display-5 fw-bold mb-4" style="color: #021A54; text-align: center;">
+    Tienda UNNE es 
+    {{-- d-block empuja la palabra abajo en móviles. d-md-inline la devuelve al lado en PC --}}
+    <span id="typewriter" class="d-block d-md-inline" style="min-height: 1.5em;"></span>
+</h1>
                 
                 {{-- Texto de Presentación --}}
                 <div class="presentation-text">
                     {{-- Volví a agregarle el 'lead' y los estilos para que se lea mejor --}}
-                    <p class="lead" style="line-height: 1.8; margin-bottom: 0;">
+                    <p>
                         La Tienda UNNE nace para fortalecer el sentido de pertenencia de toda la comunidad universitaria,
                         ofreciendo productos que reflejan nuestra identidad. Como universidad a la vanguardia en
                         tecnología y desarrollo sustentable, cada artículo representa innovación, compromiso y cuidado

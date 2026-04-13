@@ -60,12 +60,19 @@
   'opsz' 48
 }
 
-p{
+p, li{
     font-family: "Figtree", sans-serif;
     font-optical-sizing: auto;
-    font-size: 1.3rem;
+    font-size: 1.06rem;
     font-style: normal;
     color: black;
+}
+
+.marquesina{
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1.06rem;
+    font-style: normal;
 }
 
 h1, h2, h3, h4, h5, h6 {
