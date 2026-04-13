@@ -31,22 +31,22 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active text-white fw-bold" aria-current="page" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Quienes Somos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Comercializacion</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
-                    </li>
-                </ul>
+    <li class="nav-item">
+        <a class="nav-link nav-link-custom active text-white fw-bold" aria-current="page" href="#">Inicio</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link nav-link-custom" href="#">Quienes Somos</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link nav-link-custom" href="#">Productos</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link nav-link-custom" href="#">Comercializacion</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link nav-link-custom" href="#">Contacto</a>
+    </li>
+</ul>
             </div>
 
         </div>

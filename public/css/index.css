@@ -82,4 +82,40 @@ h1, h2, h3, h4, h5, h6 {
     color: #021a54;
 }
 
+/* 1. Preparamos el enlace base */
+.nav-link-custom {
+    position: relative;
+    color: rgba(255, 255, 255, 0.8) !important;
+    transition: color 0.3s ease-in-out;
+}
+
+/* 2. Al pasar el mouse, o si es la página activa, el texto se vuelve blanco puro */
+.nav-link-custom:hover,
+.nav-link-custom.active {
+    color: #ffffff !important;
+}
+
+/* 3. Aseguramos que la página activa siempre esté en negrita por las dudas */
+.nav-link-custom.active {
+    font-weight: 700 !important;
+}
+
+/* 4. Creamos la "Línea Invisible" que nace desde el centro */
+.nav-link-custom::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%; /* La ubicamos exactamente en el medio de la palabra */
+    transform: translateX(-50%); /* Truco clave para que el crecimiento sea parejo hacia ambos lados */
+    width: 0%; /* Arranca invisible */
+    height: 2px;
+    background-color: #FF6600;
+    transition: width 0.3s ease-in-out;
+}
+
+/* 5. Al pasar el mouse, la línea crece al 100%... 
+   PERO le decimos que ignore a la página que ya está activa */
+.nav-link-custom:not(.active):hover::after {
+    width: 100%;
+}
 
