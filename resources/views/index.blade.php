@@ -18,7 +18,7 @@
 
 <body>
     {{-- Barra de Navegacion --}}
-    <nav class="navbar navbar-expand-lg py-2" style="background-color: #021A54;" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg py-2 sticky-top" style="background-color: #021A54;" data-bs-theme="dark">
         <div class="container-fluid">
 
             <a class="navbar-brand" href="#">
