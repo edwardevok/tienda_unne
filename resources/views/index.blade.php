@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    
 </head>
 
 <body>
@@ -198,12 +199,117 @@
         </div>
     </div>
 
-    
-     <div class="container mb-5 mt-5">
+    {{-- Sección de Productos Destacados (Bootstrap Clásico) --}}
+<section class="py-5" style="background-color: #E6E6E6;">
+    <div class="container">
         
-        <h3 class="display-4 fw-bold mb-5 text-center" style="color: #021A54; min-height: 1.2em;">Productos destacados</h3>
+        <h2 class="display-5 fw-bold text-center mb-5" style="color: #021A54;">Destacados</h2>
+        
+        <div id="carruselDestacados" class="carousel slide pb-4" data-bs-ride="carousel">
+            
+            <div class="carousel-indicators" style="bottom: -15px;">
+                <button type="button" data-bs-target="#carruselDestacados" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carruselDestacados" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carruselDestacados" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carruselDestacados" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
 
+            <div class="carousel-inner">
+                
+                <div class="carousel-item active">
+                    <div class="row justify-content-center">
+                        <div class="col-10 col-md-6 col-lg-4">
+                            <div class="card border-0 product-card bg-transparent">
+                                <div class="bg-white rounded d-flex justify-content-center align-items-center p-3 mb-3 shadow-sm" style="aspect-ratio: 1/1;">
+                                    <img src="{{ asset('img/mate.png') }}" class="img-fluid" alt="Mate UNNE" style="object-fit: contain;">
+                                </div>
+                                <div class="card-body text-center p-0">
+                                    <h6 class="text-muted mb-2">Mate Térmico</h6>
+                                    <p class="fw-bold mb-3" style="color: #021A54; font-size: 1.1rem;">$18.000,00</p>
+                                    <a href="#" class="btn-buy d-inline-flex align-items-center gap-1 text-decoration-none" style="color: #021A54;">
+                                        <span class="text-decoration-underline">Comprar</span>
+                                        <span class="material-symbols-rounded" style="font-size: 18px;">local_mall</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-10 col-md-6 col-lg-4">
+                            <div class="card border-0 product-card bg-transparent">
+                                <div class="bg-white rounded d-flex justify-content-center align-items-center p-3 mb-3 shadow-sm" style="aspect-ratio: 1/1;">
+                                    <img src="https://via.placeholder.com/300x300" class="img-fluid" alt="Paraguas UNNE" style="object-fit: contain;">
+                                </div>
+                                <div class="card-body text-center p-0">
+                                    <h6 class="text-muted mb-2">Paraguas Institucional</h6>
+                                    <p class="fw-bold mb-3" style="color: #021A54; font-size: 1.1rem;">$27.000,00</p>
+                                    <a href="#" class="btn-buy d-inline-flex align-items-center gap-1 text-decoration-none" style="color: #021A54;">
+                                        <span class="text-decoration-underline">Comprar</span>
+                                        <span class="material-symbols-rounded" style="font-size: 18px;">local_mall</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-10 col-md-6 col-lg-4">
+                            <div class="card border-0 product-card bg-transparent">
+                                <div class="bg-white rounded d-flex justify-content-center align-items-center p-3 mb-3 shadow-sm" style="aspect-ratio: 1/1;">
+                                    <img src="https://via.placeholder.com/300x300" class="img-fluid" alt="Gorra UNNE" style="object-fit: contain;">
+                                </div>
+                                <div class="card-body text-center p-0">
+                                    <h6 class="text-muted mb-2">Gorra Azul</h6>
+                                    <p class="fw-bold mb-3" style="color: #021A54; font-size: 1.1rem;">$14.000,00</p>
+                                    <a href="#" class="btn-buy d-inline-flex align-items-center gap-1 text-decoration-none" style="color: #021A54;">
+                                        <span class="text-decoration-underline">Comprar</span>
+                                        <span class="material-symbols-rounded" style="font-size: 18px;">local_mall</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-10 col-md-6 col-lg-4">
+                            <div class="card border-0 product-card bg-transparent">
+                                <div class="bg-white rounded d-flex justify-content-center align-items-center p-3 mb-3 shadow-sm" style="aspect-ratio: 1/1;">
+                                    <img src="https://via.placeholder.com/300x300" class="img-fluid" alt="Cuaderno UNNE" style="object-fit: contain;">
+                                </div>
+                                <div class="card-body text-center p-0">
+                                    <h6 class="text-muted mb-2">Cuaderno Universitario</h6>
+                                    <p class="fw-bold mb-3" style="color: #021A54; font-size: 1.1rem;">$8.500,00</p>
+                                    <a href="#" class="btn-buy d-inline-flex align-items-center gap-1 text-decoration-none" style="color: #021A54;">
+                                        <span class="text-decoration-underline">Comprar</span>
+                                        <span class="material-symbols-rounded" style="font-size: 18px;">local_mall</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#carruselDestacados" data-bs-slide="prev" style="filter: invert(100%);">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carruselDestacados" data-bs-slide="next" style="filter: invert(100%);">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+
+        </div>
     </div>
+</section>
     
 
 
@@ -228,9 +334,13 @@
             .typeString('<span style="color: #FF6600;">futuro</span>')
             .pauseFor(2000)
             .start();
+
+
+    
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
 </body>
 
 </html>
