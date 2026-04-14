@@ -241,7 +241,7 @@
                         <div class="col-10 col-md-6 col-lg-4">
                             <div class="card border-0 product-card bg-transparent">
                                 <div class="bg-white rounded d-flex justify-content-center align-items-center p-3 mb-3 shadow-sm" style="aspect-ratio: 1/1;">
-                                    <img src="https://via.placeholder.com/300x300" class="img-fluid" alt="Paraguas UNNE" style="object-fit: contain;">
+                                    <img src="{{ asset('img/paraguas.png') }}" class="img-fluid" alt="Paraguas UNNE" style="object-fit: contain;">
                                 </div>
                                 <div class="card-body text-center p-0">
                                     <h6 class="text-muted mb-2">Paraguas Institucional</h6>
@@ -261,7 +261,7 @@
                         <div class="col-10 col-md-6 col-lg-4">
                             <div class="card border-0 product-card bg-transparent">
                                 <div class="bg-white rounded d-flex justify-content-center align-items-center p-3 mb-3 shadow-sm" style="aspect-ratio: 1/1;">
-                                    <img src="https://via.placeholder.com/300x300" class="img-fluid" alt="Gorra UNNE" style="object-fit: contain;">
+                                    <img src="{{ asset('img/gorra.png') }}" class="img-fluid" alt="Gorra UNNE" style="object-fit: contain;">
                                 </div>
                                 <div class="card-body text-center p-0">
                                     <h6 class="text-muted mb-2">Gorra Azul</h6>
@@ -281,7 +281,7 @@
                         <div class="col-10 col-md-6 col-lg-4">
                             <div class="card border-0 product-card bg-transparent">
                                 <div class="bg-white rounded d-flex justify-content-center align-items-center p-3 mb-3 shadow-sm" style="aspect-ratio: 1/1;">
-                                    <img src="https://via.placeholder.com/300x300" class="img-fluid" alt="Cuaderno UNNE" style="object-fit: contain;">
+                                    <img src="{{ asset('img/cuaderno.png') }}" class="img-fluid" alt="Cuaderno UNNE" style="object-fit: contain;">
                                 </div>
                                 <div class="card-body text-center p-0">
                                     <h6 class="text-muted mb-2">Cuaderno Universitario</h6>
