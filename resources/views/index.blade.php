@@ -137,77 +137,72 @@
     </div>
 </div>
 
-    {{-- Sección de Productos --}}
+  {{-- Sección de Categorías --}}
     <div class="container mb-5 mt-5">
         
-        {{-- Metí el título adentro del mismo container para asegurar que mantenga la misma línea --}}
         <h2 class="display-4 fw-bold mb-5 text-center" style="color: #021A54; min-height: 1.2em;">Categorías</h2>
         
         <div class="row g-4">
 
             <div class="col-12 col-md-6 col-lg-3">
-    <div class="card h-100 border-0">
-        
-        <div class="text-center pt-4">
-            <span class="material-symbols-rounded" style="font-size: 80px; color: #021A54;">
-                apparel
-            </span>
-        </div>
+                {{-- Cambiamos el div por un 'a' y agregamos 'category-card' y 'text-decoration-none' --}}
+                <a href="#" class="card h-100 border-0 category-card text-decoration-none">
+                    <div class="text-center pt-4">
+                        <span class="material-symbols-rounded" style="font-size: 80px; color: #021A54;">
+                            apparel
+                        </span>
+                    </div>
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-bold" style="color: #021A54;">Indumentaria</h5>
+                    </div>
+                </a>
+            </div>
 
-        <div class="card-body d-flex flex-column text-center">
-            <h5 class="card-title fw-bold" style="color: #021A54;">Indumentaria</h5>
+            <div class="col-12 col-md-6 col-lg-3">
+                <a href="#" class="card h-100 border-0 category-card text-decoration-none">
+                    <div class="text-center pt-4">
+                        <span class="material-symbols-rounded" style="color: #021A54; font-size: 80px;">personal_bag</span>
+                    </div>
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-bold" style="color: #021A54;">Accesorios</h5>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <a href="#" class="card h-100 border-0 category-card text-decoration-none">
+                    <div class="text-center pt-4">
+                        <span class="material-symbols-rounded" style="font-size: 80px; color: #021A54;">
+                            ink_pen
+                        </span>
+                    </div>
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-bold" style="color: #021A54;">Útiles</h5>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3">
+                <a href="#" class="card h-100 border-0 category-card text-decoration-none">
+                    <div class="text-center pt-4">
+                        <span class="material-symbols-rounded" style="font-size: 80px; color: #021A54;">
+                            water_bottle
+                        </span>
+                    </div>
+                    <div class="card-body d-flex flex-column text-center">
+                        <h5 class="card-title fw-bold" style="color: #021A54;">Botellas y termos</h5>
+                    </div>
+                </a>
+            </div>
+
         </div>
-        
     </div>
-</div>
 
-             <div class="col-12 col-md-6 col-lg-3">
-    <div class="card h-100 border-0">
+    
+     <div class="container mb-5 mt-5">
         
-        <div class="text-center pt-4">
-            <span class="material-symbols-rounded" style="color: #021A54; font-size: 80px;">personal_bag</span>
-        </div>
+        <h3 class="display-4 fw-bold mb-5 text-center" style="color: #021A54; min-height: 1.2em;">Productos destacados</h3>
 
-        <div class="card-body d-flex flex-column text-center">
-            <h5 class="card-title fw-bold" style="color: #021A54;">Accsesorios</h5>
-        </div>
-        
-    </div>
-</div>
-
-             <div class="col-12 col-md-6 col-lg-3">
-    <div class="card h-100 border-0">
-        
-        <div class="text-center pt-4">
-            <span class="material-symbols-rounded" style="font-size: 80px; color: #021A54;">
-                ink_pen
-            </span>
-        </div>
-
-        <div class="card-body d-flex flex-column text-center">
-            <h5 class="card-title fw-bold" style="color: #021A54;">Útiles</h5>
-        </div>
-        
-    </div>
-</div>
-
-             <div class="col-12 col-md-6 col-lg-3">
-    <div class="card h-100 border-0">
-        
-        <div class="text-center pt-4">
-            <span class="material-symbols-rounded" style="font-size: 80px; color: #021A54;">
-                water_bottle
-            </span>
-        </div>
-
-        <div class="card-body d-flex flex-column text-center">
-            <h5 class="card-title fw-bold" style="color: #021A54;">Botellas y termos</h5>
-        </div>
-        
-    </div>
-</div>
-
-        </div>
     </div>
     
 
