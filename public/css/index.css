@@ -133,4 +133,33 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 10px 20px rgba(2, 26, 84, 0.1) !important; 
     border-radius: 10px; /* Redondea las puntas un poco para que se vea más amigable */
 }
+/* Estilos para los links del footer */
+.footer-link-custom {
+    color: rgb(255, 255, 255) !important;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
 
+.footer-link-custom:hover {
+    color: #FF6600 !important; /* Cambia a naranja al pasar el mouse */
+    transform: translateX(5px); /* Se desplaza un poquito a la derecha */
+}
+
+/* Estilos para los iconos de contacto */
+.footer-social-icon {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-social-icon:hover {
+    color: #FF6600;
+}
+
+.texto_foot{
+    color: white;
+}
+.texto_foot2{
+    color: rgb(189, 189, 189);
+    font-size: 0.9rem;
+}
