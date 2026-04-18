@@ -44,10 +44,57 @@
         
     </section>
 
-    {{-- Acá abajo después podés agregar el resto de la página (el texto, fotos de la tienda, etc) --}}
-    <div class="container my-5 py-5">
-        <h2 class="text-center" style="color: #021A54;">Próximamente el contenido...</h2>
+    {{-- Hero end --}}
+
+    {{-- Presentacion de nosotros start --}}
+{{-- Sección de Nuestro Equipo con Marcos --}}
+{{-- Sección de Nuestro Equipo con Marcos --}}
+{{-- Sección de Nuestro Equipo con Parallax y Capa Azul --}}
+<section class="parallax-equipo">
+    
+    {{-- La capa azul --}}
+    <div class="overlay-azul"></div>
+
+    {{-- El contenido (con z-index para estar arriba de la capa) --}}
+    <div class="container position-relative" style="z-index: 2;">
+        
+        <h2 class="display-5 fw-bold text-center mb-5 pb-3 text-white">El Equipo Detrás de la Tienda</h2>
+
+        {{-- MARCO PERSONA 1 --}}
+        <div class="fila-equipo">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-5 mb-4 mb-md-0">
+                    <img src="{{ asset('img/yo.png') }}" alt="Nombre 1" class="img-fluid rounded shadow-sm equipo-img">
+                </div>
+                <div class="col-12 col-md-7 ps-md-4">
+                    <h3 class="fw-bold mb-1 texto-azul-unne">Nombre de la Persona 1</h3>
+                    <h6 class="text-uppercase mb-3 equipo-rol">Director del Proyecto</h6>
+                    <p class="text-muted equipo-texto">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, quo? Laboriosam iure quia aliquid obcaecati sit distinctio expedita cupiditate delectus tempora facere dicta eum, sint ex illo! Perferendis, architecto inventore.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        {{-- MARCO PERSONA 2 --}}
+        <div class="fila-equipo mb-0">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-7 pe-md-4 order-2 order-md-1">
+                    <h3 class="fw-bold mb-1 texto-azul-unne">Nombre de la Persona 2</h3>
+                    <h6 class="text-uppercase mb-3 equipo-rol">Coordinadora de Ventas</h6>
+                    <p class="text-muted equipo-texto">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio dicta accusantium ab culpa facere quae? Ipsam odit, suscipit aperiam incidunt iure fugiat labore repellendus, reiciendis et aut voluptatibus non recusandae?
+                    </p>
+                </div>
+                <div class="col-12 col-md-5 mb-4 mb-md-0 order-1 order-md-2">
+                    <img src="{{ asset('img/yo.png') }}" alt="Nombre 2" class="img-fluid rounded shadow-sm equipo-img">
+                </div>
+            </div>
+        </div>
+
     </div>
+</section>
+    {{-- Presentacion de nosotros end --}}
 
     {{-- Footer --}}
     @include('partials.footer')
