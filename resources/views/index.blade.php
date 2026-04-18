@@ -18,40 +18,7 @@
 
 <body>
     {{-- Barra de Navegacion --}}
-    <nav class="navbar navbar-expand-lg py-2 sticky-top" style="background-color: #021A54;" data-bs-theme="dark">
-        <div class="container-fluid">
-
-            <a class="navbar-brand" href="#">
-                <img src="{{ asset('img/logo_unne.png') }}" alt="Logo UNNE" style="height: 80px; object-fit: contain;">
-            </a>
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto text-center">
-    <li class="nav-item">
-        <a class="nav-link nav-link-custom active text-white fw-bold" aria-current="page" href="#">Inicio</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link nav-link-custom" href="#">Quienes Somos</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link nav-link-custom" href="#">Productos</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link nav-link-custom" href="#">Comercializacion</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link nav-link-custom" href="#">Contacto</a>
-    </li>
-</ul>
-            </div>
-
-        </div>
-    </nav>
+    @include('partials.navbar')
 
     {{-- Maquesina de promociones --}}
     <div class="marquee-container">
@@ -311,63 +278,7 @@
     </div>
 </section>
 
-<footer class="py-5" style="background-color: #1a1a1a; color: #ffffff;">
-    <div class="container">
-        <div class="row g-4 text-center text-md-start">
-            
-            <div class="col-12 col-md-4 d-flex align-items-center justify-content-center justify-content-md-start">
-                <a href="#">
-                    <img src="{{ asset('img/logo_footer.png') }}" alt="Logo UNNE" style="height: 200px; object-fit: contain;">
-                </a>
-            </div>
-
-            <div class="col-12 col-md-4">
-                <h5 class="fw-bold mb-4" style="color: #ffffff;">Categorías</h5>
-                <ul class="list-unstyled">
-                    <li class="mb-2">
-                        <a href="#" class="footer-link-custom text-decoration-none">Inicio</a>
-                    </li>
-                    <li class="mb-2">
-                        <a href="#" class="footer-link-custom text-decoration-none">Quienes Somos</a>
-                    </li>
-                    <li class="mb-2">
-                        <a href="#" class="footer-link-custom text-decoration-none">Productos</a>
-                    </li>
-                    <li class="mb-2">
-                        <a href="#" class="footer-link-custom text-decoration-none">Comercializacion</a>
-                    </li>
-                    <li class="mb-2">
-                        <a href="#" class="footer-link-custom text-decoration-none">Contacto</a>
-                    </li>
-                    <li class="mb-2">
-                        <a href="#" class="footer-link-custom text-decoration-none">Terminos y condiciones</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col-12 col-md-4">
-                <h5 class="fw-bold mb-4" style="color: #ffffff;">Contactanos</h5>
-                <p class="mb-2 d-flex align-items-center justify-content-center justify-content-md-start gap-2 texto_foot">
-                    <span class="material-symbols-rounded" style="font-size: 20px;">mail</span>
-                    tienda@unne.edu.ar
-                </p>
-                <p class="mb-2 d-flex align-items-center justify-content-center justify-content-md-start gap-2 texto_foot">
-                    <span class="material-symbols-rounded" style="font-size: 20px;">location_on</span>
-                    Campus Universitario, Corrientes/Resistencia
-                </p>
-                
-            </div>
-
-        </div>
-
-        <hr class="mt-5 opacity-25" style="background-color: #ffffff;">
-        <div class="text-center mt-4 pt-2">
-            <p class="texto_foot2">© 2026 Tienda UNNE - Todos los derechos reservados.</p>
-        </div>
-    </div>
-</footer>
-    
-
+@include('partials.footer')
 
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 
@@ -391,8 +302,6 @@
             .pauseFor(2000)
             .start();
 
-
-    
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
