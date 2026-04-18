@@ -13,10 +13,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto text-center">
     <li class="nav-item">
-        <a class="nav-link nav-link-custom active text-white fw-bold" aria-current="page" href="#">Inicio</a>
+        <a class="nav-link nav-link-custom active text-white fw-bold" aria-current="page" href="/index">Inicio</a>
     </li>
     <li class="nav-item">
-        <a class="nav-link nav-link-custom" href="#">Quienes Somos</a>
+        <a class="nav-link nav-link-custom" href="/quienes-somos">Quienes Somos</a>
     </li>
     <li class="nav-item">
         <a class="nav-link nav-link-custom" href="#">Productos</a>
