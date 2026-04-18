@@ -96,6 +96,64 @@
 </section>
     {{-- Presentacion de nosotros end --}}
 
+    {{-- mision,vision y valores start --}}
+    {{-- Sección Misión, Visión y Valores --}}
+<section class="py-5 bg-light">
+    <div class="container my-5">
+        
+        <div class="text-center mb-5">
+            <span class="text-uppercase fw-bold mb-2 d-block" style="color: #FF6600; letter-spacing: 2px;">
+                Nuestra Esencia
+            </span>
+            <h2 class="display-6 fw-bold texto-azul-unne">Misión, Visión y Valores</h2>
+        </div>
+
+        <div class="row g-4">
+            
+            {{-- 1. MISIÓN --}}
+            <div class="col-12 col-md-4">
+                <div class="card border-0 shadow-sm h-100 tarjeta-valor text-center p-4">
+                    <div class="card-body">
+                        <span class="material-symbols-rounded icono-valor">my_location</span>
+                        <h4 class="fw-bold texto-azul-unne mb-3">Misión</h4>
+                        <p class="text-muted" style="line-height: 1.7;">
+                            Brindar a la comunidad universitaria productos de alta calidad que representen el orgullo y la identidad de la UNNE, facilitando el acceso a través de una plataforma moderna y eficiente.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            {{-- 2. VISIÓN --}}
+            <div class="col-12 col-md-4">
+                <div class="card border-0 shadow-sm h-100 tarjeta-valor text-center p-4">
+                    <div class="card-body">
+                        <span class="material-symbols-rounded icono-valor">visibility</span>
+                        <h4 class="fw-bold texto-azul-unne mb-3">Visión</h4>
+                        <p class="text-muted" style="line-height: 1.7;">
+                            Ser la tienda universitaria referente en toda la región, destacando por nuestra innovación, compromiso con la sustentabilidad y el fomento del sentido de pertenencia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            {{-- 3. VALORES --}}
+            <div class="col-12 col-md-4">
+                <div class="card border-0 shadow-sm h-100 tarjeta-valor text-center p-4">
+                    <div class="card-body">
+                        <span class="material-symbols-rounded icono-valor">favorite</span>
+                        <h4 class="fw-bold texto-azul-unne mb-3">Valores</h4>
+                        <p class="text-muted" style="line-height: 1.7;">
+                            Identidad institucional, Transparencia en la gestión, Calidad garantizada, Innovación constante y Compromiso total con nuestra comunidad estudiantil y docente.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+    {{-- mision,vision y valores end --}}
+
     {{-- Footer --}}
     @include('partials.footer')
     {{-- Footer end --}}
