@@ -111,48 +111,44 @@
 {{-- Sección de Nuestro Equipo con Marcos --}}
 {{-- Sección de Nuestro Equipo con Marcos --}}
 {{-- Sección de Nuestro Equipo con Parallax y Capa Azul --}}
-<section class="parallax-equipo">
-    
-    {{-- La capa azul --}}
-    <div class="overlay-azul"></div>
-
-    {{-- El contenido (con z-index para estar arriba de la capa) --}}
-    <div class="container position-relative" style="z-index: 2;">
+{{-- Nueva Sección Equipo con Fondo Azul y Cards Blancas --}}
+<section class="seccion-equipo-azul">
+    <div class="container">
         
-        <h2 class="display-5 fw-bold text-center mb-5 pb-3 text-white">El Equipo Detrás de la Tienda</h2>
-
-        {{-- MARCO PERSONA 1 --}}
-        <div class="fila-equipo">
-            <div class="row align-items-center">
-                <div class="col-12 col-md-5 mb-4 mb-md-0">
-                    <img src="{{ asset('img/yo.png') }}" alt="Nombre 1" class="img-fluid rounded shadow-sm equipo-img">
-                </div>
-                <div class="col-12 col-md-7 ps-md-4">
-                    <h3 class="fw-bold mb-1 texto-azul-unne">Nombre de la Persona 1</h3>
-                    <h6 class="text-uppercase mb-3 equipo-rol">Director del Proyecto</h6>
-                    <p class="text-muted equipo-texto">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, quo? Laboriosam iure quia aliquid obcaecati sit distinctio expedita cupiditate delectus tempora facere dicta eum, sint ex illo! Perferendis, architecto inventore.
-                    </p>
-                </div>
-            </div>
+        <div class="text-center mb-5">
+            <h2 class="display-5 fw-bold text-white">El equipo detrás de la tienda</h2>
+            <div class="mx-auto mt-2" style="width: 80px; height: 4px; background-color: #FF6600;"></div>
         </div>
 
-        {{-- MARCO PERSONA 2 --}}
-        <div class="fila-equipo mb-0">
-            <div class="row align-items-center">
-                <div class="col-12 col-md-7 pe-md-4 order-2 order-md-1">
-                    <h3 class="fw-bold mb-1 texto-azul-unne">Nombre de la Persona 2</h3>
-                    <h6 class="text-uppercase mb-3 equipo-rol">Coordinadora de Ventas</h6>
-                    <p class="text-muted equipo-texto">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio dicta accusantium ab culpa facere quae? Ipsam odit, suscipit aperiam incidunt iure fugiat labore repellendus, reiciendis et aut voluptatibus non recusandae?
-                    </p>
-                </div>
-                <div class="col-12 col-md-5 mb-4 mb-md-0 order-1 order-md-2">
-                    <img src="{{ asset('img/yo.png') }}" alt="Nombre 2" class="img-fluid rounded shadow-sm equipo-img">
+        <div class="row g-4 justify-content-center">
+            
+            {{-- Tarjeta Persona 1 --}}
+            <div class="col-12 col-md-5">
+                <div class="card card-equipo-nueva shadow">
+                    <div class="card-body">
+                        <img src="{{ asset('img/yo.png') }}" alt="Nombre 1" class="foto-chica-equipo">
+                        <h3 class="h4 nombre-equipo">Eduardo López</h3>
+                        <p class="desc-equipo">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quod, corporis quia dolorem et debitis maxime reiciendis rerum ab sequi, quas aliquid porro? Et quibusdam ex quam, sapiente ducimus eveniet?
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
 
+            {{-- Tarjeta Persona 2 --}}
+            <div class="col-12 col-md-5">
+                <div class="card card-equipo-nueva shadow">
+                    <div class="card-body">
+                        <img src="{{ asset('img/yo.png') }}" alt="Nombre 2" class="foto-chica-equipo">
+                        <h3 class="h4 nombre-equipo">Joan Mauri</h3>
+                        <p class="desc-equipo">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat tempora commodi atque quo exercitationem numquam repellat debitis officia reprehenderit. Totam consequatur incidunt ut minima rem, enim ea expedita dolores ratione?
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
 </section>
     {{-- Presentacion de nosotros end --}}
