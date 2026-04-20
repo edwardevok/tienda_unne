@@ -134,8 +134,8 @@
                             <div id="gen1" class="accordion-collapse collapse show"
                                 data-bs-parent="#faqGeneral">
                                 <div class="accordion-body text-secondary">
-                                    Todos los estudiantes matriculados en la UNNE con correo institucional activo
-                                    acceden al beneficio automáticamente al validar sus datos.
+                                    <p>Todos los estudiantes matriculados en la UNNE con correo institucional activo
+                                        acceden al beneficio automáticamente al validar sus datos.</p>
                                 </div>
                             </div>
                         </div>
@@ -148,7 +148,8 @@
                             </h2>
                             <div id="gen2" class="accordion-collapse collapse" data-bs-parent="#faqGeneral">
                                 <div class="accordion-body text-secondary">
-                                    Aceptamos tarjetas de crédito/débito, Mercado Pago y transferencias bancarias.
+                                    <p>Aceptamos tarjetas de crédito/débito, Mercado Pago y transferencias bancarias.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -169,8 +170,9 @@
                             </h2>
                             <div id="env1" class="accordion-collapse collapse" data-bs-parent="#faqEnvios">
                                 <div class="accordion-body text-secondary">
-                                    El procesamiento tarda de 1 a 3 días hábiles. El tiempo de envío final depende de tu
-                                    ubicación (2 a 5 días promedio).
+                                    <p>El procesamiento tarda de 1 a 3 días hábiles. El tiempo de envío final depende de
+                                        tu
+                                        ubicación (2 a 5 días promedio).</p>
                                 </div>
                             </div>
                         </div>
@@ -183,8 +185,8 @@
                             </h2>
                             <div id="env2" class="accordion-collapse collapse" data-bs-parent="#faqEnvios">
                                 <div class="accordion-body text-secondary">
-                                    Puedes gestionar devoluciones dentro de los 30 días contactándonos a través de
-                                    nuestro formulario oficial.
+                                    <p>Puedes gestionar devoluciones dentro de los 30 días contactándonos a través de
+                                        nuestro formulario oficial.</p>
                                 </div>
                             </div>
                         </div>
@@ -205,7 +207,7 @@
                             </h2>
                             <div id="pick1" class="accordion-collapse collapse" data-bs-parent="#faqRecogida">
                                 <div class="accordion-body text-secondary">
-                                    Estará listo en aproximadamente 2 a 4 días hábiles. Te avisaremos por correo.
+                                    <p>Estará listo en aproximadamente 2 a 4 días hábiles. Te avisaremos por correo.</p>
                                 </div>
                             </div>
                         </div>
@@ -218,7 +220,8 @@
                             </h2>
                             <div id="pick2" class="accordion-collapse collapse" data-bs-parent="#faqRecogida">
                                 <div class="accordion-body text-secondary">
-                                    En los puntos de retiro oficiales de Campus Sargento Cabral o Campus Resistencia.
+                                    <p>En los puntos de retiro oficiales de Campus Sargento Cabral o Campus Resistencia.
+                                    </p>
                                 </div>
                             </div>
                         </div>
