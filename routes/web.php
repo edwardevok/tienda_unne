@@ -13,3 +13,7 @@ return view('index');
 Route::get('/quienes-somos', function () {
     return view('quienes_somos');
 });
+
+Route::get('/comercializacion', function () {
+    return view('comercializacion');
+});
