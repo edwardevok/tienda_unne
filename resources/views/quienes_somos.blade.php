@@ -126,7 +126,7 @@
             <div class="col-12 col-md-5">
                 <div class="card card-equipo-nueva shadow">
                     <div class="card-body">
-                        <img src="{{ asset('img/yo.png') }}" alt="Nombre 1" class="foto-chica-equipo">
+                        <img src="{{ asset('img/edu.jpg') }}" alt="Nombre 1" class="foto-chica-equipo">
                         <h3 class="h4 nombre-equipo">Eduardo López</h3>
                         <p class="desc-equipo">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quod, corporis quia dolorem et debitis maxime reiciendis rerum ab sequi, quas aliquid porro? Et quibusdam ex quam, sapiente ducimus eveniet?
@@ -139,7 +139,7 @@
             <div class="col-12 col-md-5">
                 <div class="card card-equipo-nueva shadow">
                     <div class="card-body">
-                        <img src="{{ asset('img/yo.png') }}" alt="Nombre 2" class="foto-chica-equipo">
+                        <img src="{{ asset('img/joan.jpg') }}" alt="Nombre 2" class="foto-chica-equipo">
                         <h3 class="h4 nombre-equipo">Joan Mauri</h3>
                         <p class="desc-equipo">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat tempora commodi atque quo exercitationem numquam repellat debitis officia reprehenderit. Totam consequatur incidunt ut minima rem, enim ea expedita dolores ratione?

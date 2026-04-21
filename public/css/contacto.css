@@ -32,31 +32,3 @@ h1, h2, h3, h4, h5, h6 {
     background: linear-gradient(to right, rgba(2, 26, 84, 0.85), rgba(2, 26, 84, 0.6));
     z-index: 1;
 }
-
-/* Estilos para Preguntas Frecuentes */
-.accordion-button:not(.collapsed) {
-    background-color: transparent !important;
-    color: #021a54 !important;
-    box-shadow: none !important;
-}
-
-.accordion-button:focus {
-    box-shadow: none !important;
-}
-
-.accordion-button {
-    font-size: 1.1rem;
-    padding: 1.5rem 1.25rem;
-    border-bottom: 1px solid #eee;
-}
-
-.accordion-body {
-    line-height: 1.6;
-    background-color: #fafafa;
-}
-
-/* Boton de ponte en contacto */
-.btn-lg:hover {
-    background-color: #e65c00 !important;
-    transform: scale(1.05);
-}

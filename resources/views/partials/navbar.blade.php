@@ -26,7 +26,10 @@
                     <a class="nav-link nav-link-custom" href="/comercializacion">Comercializacion</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-custom" href="#">Contacto</a>
+                    <a class="nav-link nav-link-custom" href="/contacto">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-custom" href="/terminos">Terminos y Condiciones</a>
                 </li>
             </ul>
         </div>

@@ -21,3 +21,7 @@ Route::get('/comercializacion', function () {
 Route::get('/terminos', function () {
     return view('terminos');
 });
+
+Route::get('/contacto', function () {
+    return view('contacto');
+});

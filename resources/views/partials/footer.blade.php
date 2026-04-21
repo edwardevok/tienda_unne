@@ -12,19 +12,19 @@
                 <h5 class="fw-bold mb-4" style="color: #ffffff;">Categorías</h5>
                 <ul class="list-unstyled">
                     <li class="mb-2">
-                        <a href="#" class="footer-link-custom text-decoration-none">Inicio</a>
+                        <a href="/index" class="footer-link-custom text-decoration-none">Inicio</a>
                     </li>
                     <li class="mb-2">
-                        <a href="#" class="footer-link-custom text-decoration-none">Quienes Somos</a>
+                        <a href="/quienes_somos" class="footer-link-custom text-decoration-none">Quienes Somos</a>
                     </li>
                     <li class="mb-2">
                         <a href="#" class="footer-link-custom text-decoration-none">Productos</a>
                     </li>
                     <li class="mb-2">
-                        <a href="#" class="footer-link-custom text-decoration-none">Comercializacion</a>
+                        <a href="/comercializacion" class="footer-link-custom text-decoration-none">Comercializacion</a>
                     </li>
                     <li class="mb-2">
-                        <a href="#" class="footer-link-custom text-decoration-none">Contacto</a>
+                        <a href="/contacto" class="footer-link-custom text-decoration-none">Contacto</a>
                     </li>
                     <li class="mb-2">
                         <a href="/terminos" class="footer-link-custom text-decoration-none">Terminos y condiciones</a>

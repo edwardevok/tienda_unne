@@ -19,13 +19,27 @@
     {{-- NavBar end --}}
 
 {{-- Header de la página --}}
-    <header class="py-5 text-center" style="background-color: #000b76;">
-        <div class="container py-4">
-            <h1 class="display-4 fw-bold text-white mb-2">Aviso Legal</h1>
-            <p class="lead text-white-50 mb-0">Términos, Condiciones y Políticas de Privacidad</p>
-        </div>
-    </header>
+    {{-- Banner --}}
+        <!-- Banner de bienvenida -->
+         {{-- Cuerpo --}}
+    <section class="hero-quienes-somos position-relative d-flex align-items-center justify-content-center text-center">
+        
+        {{-- Capa oscura para que el texto resalte (Overlay) --}}
+        <div class="overlay-hero"></div>
 
+        {{-- Contenido del Banner --}}
+        <div class="container position-relative" style="z-index: 2;">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8">
+                    <h1 class="display-3 fw-bold text-white mb-3">Avisos Legales</h1>
+                    <p class="lead text-white-50 mb-0">
+                        Términos, Condiciones y Política de Privacidad
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
     <div class="container my-5 py-4">
         <div class="row">
             

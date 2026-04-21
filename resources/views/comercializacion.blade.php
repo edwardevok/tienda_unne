@@ -24,91 +24,26 @@
     {{-- Navbar --}}
     @include('partials.navbar')
 
-    {{-- Cuerpo --}}
-    <section class="w-100 mb-5">
-        <img src="{{ asset('img/bannerC.jpg') }}" class="img-fluid w-100" alt="Contacto Tienda UNNE"
-            style="height: 350px; object-fit: cover;">
-    </section>
+    {{-- Banner --}}
+        <!-- Banner de bienvenida -->
+         {{-- Cuerpo --}}
+    <section class="hero-quienes-somos position-relative d-flex align-items-center justify-content-center text-center">
+        
+        {{-- Capa oscura para que el texto resalte (Overlay) --}}
+        <div class="overlay-hero"></div>
 
-    <section class="container mb-5">
-        <div class="row g-4">
-
-            <div class="col-md-7">
-                <div class="card h-100 shadow-sm border-0 overflow-hidden" style="min-height: 400px;">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.123456789!2d-58.8341!3d-27.4692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDI4JzA5LjEiUyA1OMKwNTAnMDIuOCJX!5e0!3m2!1ses!2sar!4v1620000000000"
-                        width="100%" height="100%" style="border:0; min-height: 400px;" allowfullscreen=""
-                        loading="lazy">
-                    </iframe>
-                </div>
-            </div>
-
-            <div class="col-md-5">
-                <div class="card h-100 shadow-sm border-0 p-4" style="background-color: #f8f9fa;">
-                    <div class="card-body">
-                        <h2 class="fw-bold mb-4" style="color: #021A54;">Ubicaciones</h2>
-
-                        <div class="mb-4">
-                            <h5 class="fw-bold text-primary mb-1">Campus Sargento Cabral</h5>
-                            <p class="mb-1"><i class="bi bi-geo-alt"></i> Juan Bautista Cabral 2131, Corrientes</p>
-                            <p class="text-muted small"><i class="bi bi-clock"></i> Lunes a Viernes: 08:00 - 20:00 hs
-                            </p>
-                        </div>
-
-                        <hr>
-
-                        <div class="mt-4">
-                            <h5 class="fw-bold text-primary mb-1">Campus Deodoro Roca</h5>
-                            <p class="mb-1"><i class="bi bi-geo-alt"></i> Av. Libertad 5470, Corrientes</p>
-                            <p class="text-muted small"><i class="bi bi-clock"></i> Lunes a Viernes: 09:00 - 18:00 hs
-                            </p>
-                        </div>
-                    </div>
+        {{-- Contenido del Banner --}}
+        <div class="container position-relative" style="z-index: 2;">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-8">
+                    <h1 class="display-3 fw-bold text-white mb-3">Comercializacion</h1>
                 </div>
             </div>
         </div>
+        
     </section>
 
-    {{-- Barra de informacion  --}}
-    <section class="w-100 py-5" style="background-color: #021A54;">
-        <div class="container">
-            <div class="row text-center g-4">
 
-                <div class="col-6 col-md-3">
-                    <span class="material-symbols-outlined mb-2 d-block text-white" style="font-size: 3rem;">
-                        local_shipping
-                    </span>
-                    <p class="small mb-0 text-white fw-bold">Envío Gratis</p>
-                    <p class="small mb-0 text-white opacity-75">en compras +$50.000</p>
-                </div>
-
-                <div class="col-6 col-md-3">
-                    <span class="material-symbols-outlined mb-2 d-block text-white" style="font-size: 3rem;">
-                        credit_card
-                    </span>
-                    <p class="small mb-0 text-white fw-bold">3 Cuotas sin interés</p>
-                    <p class="small mb-0 text-white opacity-75">con tarjetas UNNE</p>
-                </div>
-
-                <div class="col-6 col-md-3">
-                    <span class="material-symbols-outlined mb-2 d-block text-white" style="font-size: 3rem;">
-                        cached
-                    </span>
-                    <p class="small mb-0 text-white fw-bold">Cambios simples</p>
-                    <p class="small mb-0 text-white opacity-75">30 días para devoluciones</p>
-                </div>
-
-                <div class="col-6 col-md-3">
-                    <span class="material-symbols-outlined mb-2 d-block text-white" style="font-size: 3rem;">
-                        verified_user
-                    </span>
-                    <p class="small mb-0 text-white fw-bold">Compra Segura</p>
-                    <p class="small mb-0 text-white opacity-75">Protección de datos</p>
-                </div>
-
-            </div>
-        </div>
-    </section>
 
     {{-- Preguntas frecuentes --}}
     <section class="container mt-5 pt-5 mb-5 pb-5">
@@ -231,29 +166,47 @@
             </div>
         </div>
     </section>
+    {{-- Barra de informacion  --}}
+    <section class="w-100 py-5" style="background-color: #021A54;">
+        <div class="container">
+            <div class="row text-center g-4">
 
-    {{-- Ponte en contacto --}}
-    <section class="container mb-5 pb-5 mt-0 pt-0 text-center">
-        <div class="mb-3">
-            <span class="material-symbols-outlined" style="font-size: 4rem; color: #021A54;">
-                forum
-            </span>
-        </div>
+                <div class="col-6 col-md-3">
+                    <span class="material-symbols-outlined mb-2 d-block text-white" style="font-size: 3rem;">
+                        local_shipping
+                    </span>
+                    <p class="small mb-0 text-white fw-bold">Envío Gratis</p>
+                    <p class="small mb-0 text-white opacity-75">en compras +$50.000</p>
+                </div>
 
-        <h2 class="fw-bold mb-3" style="color: #021A54;">Ponte en contacto</h2>
-        <p class="text-secondary mx-auto" style="max-width: 600px;">
-            ¿Tiene alguna pregunta sobre su pedido o alguna consulta general?
-            Nuestro equipo está listo para ayudarte de forma inmediata por WhatsApp.
-        </p>
+                <div class="col-6 col-md-3">
+                    <span class="material-symbols-outlined mb-2 d-block text-white" style="font-size: 3rem;">
+                        credit_card
+                    </span>
+                    <p class="small mb-0 text-white fw-bold">3 Cuotas sin interés</p>
+                    <p class="small mb-0 text-white opacity-75">con tarjetas UNNE</p>
+                </div>
 
-        <div class="mt-4">
-            <a href="https://wa.me/543794000000?text=Hola!%20Tengo%20una%20consulta%20sobre%20la%20Tienda%20UNNE"
-                target="_blank" class="btn btn-lg px-5 py-3 fw-bold text-white shadow"
-                style="background-color: #FF6600; border-radius: 50px; border: none; transition: 0.3s;">
-                <i class="bi bi-whatsapp me-2"></i> Contáctanos
-            </a>
+                <div class="col-6 col-md-3">
+                    <span class="material-symbols-outlined mb-2 d-block text-white" style="font-size: 3rem;">
+                        cached
+                    </span>
+                    <p class="small mb-0 text-white fw-bold">Cambios simples</p>
+                    <p class="small mb-0 text-white opacity-75">30 días para devoluciones</p>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <span class="material-symbols-outlined mb-2 d-block text-white" style="font-size: 3rem;">
+                        verified_user
+                    </span>
+                    <p class="small mb-0 text-white fw-bold">Compra Segura</p>
+                    <p class="small mb-0 text-white opacity-75">Protección de datos</p>
+                </div>
+
+            </div>
         </div>
     </section>
+
 
 
     {{-- Footer --}}
