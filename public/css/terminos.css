@@ -1,0 +1,37 @@
+/* --- Página Términos y Condiciones --- */
+.menu-legal-flotante {
+    position: sticky;
+    top: 120px; /* Queda fijo a 120px del techo para que no lo tape la navbar */
+}
+
+.link-legal {
+    display: block;
+    padding: 10px 15px;
+    color: #6c757d;
+    text-decoration: none;
+    border-left: 3px solid transparent;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.link-legal:hover, .link-legal.active {
+    color: #021A54;
+    border-left-color: #FF6600; /* Borde naranja al seleccionar */
+    background-color: rgba(2, 26, 84, 0.03);
+}
+
+.cuerpo-legal h2 {
+    color: #021A54;
+    font-weight: bold;
+    border-bottom: 2px solid #f8f9fa;
+    padding-bottom: 10px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.cuerpo-legal p {
+    color: #555;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 20px;
+}

@@ -27,7 +27,7 @@
                         <a href="#" class="footer-link-custom text-decoration-none">Contacto</a>
                     </li>
                     <li class="mb-2">
-                        <a href="#" class="footer-link-custom text-decoration-none">Terminos y condiciones</a>
+                        <a href="/terminos" class="footer-link-custom text-decoration-none">Terminos y condiciones</a>
                     </li>
                 </ul>
             </div>
