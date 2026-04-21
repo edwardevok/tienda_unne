@@ -35,3 +35,8 @@
     text-align: justify;
     margin-bottom: 20px;
 }
+
+/* --- Fix para el scroll con la Navbar Sticky --- */
+section[id] {
+    scroll-margin-top: 130px; /* 100px de la barra + 30px de aire para que no quede pegado */
+}
