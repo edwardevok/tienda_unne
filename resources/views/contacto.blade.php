@@ -45,39 +45,55 @@
 
     <!-- Mapa y cards de direcciones -->
 
-    <section class="container mb-5 mt-5">
+   <section class="container mb-5 mt-5">
         <div class="row g-4">
 
+            {{-- Columna del Mapa --}}
             <div class="col-md-7">
-                <div class="card h-100 shadow-sm border-0 overflow-hidden" style="min-height: 400px;">
+                <div class="card h-100 shadow-sm border-0 overflow-hidden" style="min-height: 500px;">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.123456789!2d-58.8341!3d-27.4692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDI4JzA5LjEiUyA1OMKwNTAnMDIuOCJX!5e0!3m2!1ses!2sar!4v1620000000000"
-                        width="100%" height="100%" style="border:0; min-height: 400px;" allowfullscreen=""
+                        width="100%" height="100%" style="border:0; min-height: 500px;" allowfullscreen=""
                         loading="lazy">
                     </iframe>
                 </div>
             </div>
 
+            {{-- Columna de Información Legal y Ubicaciones --}}
             <div class="col-md-5">
                 <div class="card h-100 shadow-sm border-0 p-4" style="background-color: #f8f9fa;">
                     <div class="card-body">
-                        <h2 class="fw-bold mb-4" style="color: #021A54;">Ubicaciones</h2>
+                        <h2 class="fw-bold mb-4" style="color: #021A54;">Información de Contacto</h2>
 
-                        <div class="mb-4">
-                            <h5 class="fw-bold text-primary mb-1">Campus Sargento Cabral</h5>
-                            <p class="mb-1"><i class="bi bi-geo-alt"></i> Juan Bautista Cabral 2131, Corrientes</p>
-                            <p class="text-muted small"><i class="bi bi-clock"></i> Lunes a Viernes: 08:00 - 20:00 hs
-                            </p>
+                        {{-- Sección Nueva: Información Legal (Consigna del profesor) --}}
+                        <div class="mb-4 p-3 bg-white border rounded shadow-sm">
+                            <h5 class="fw-bold mb-3" style="color: #FF6600; font-size: 1.1rem;">Datos Legales</h5>
+                            <ul class="list-unstyled text-secondary small mb-0">
+                                <li class="mb-2"><i class="bi bi-building me-2"></i><strong>Razón Social:</strong> Tienda UNNE S.A.</li>
+                                <li class="mb-2"><i class="bi bi-person-badge me-2"></i><strong>Titular:</strong> Lic. Nombre del Titular</li>
+                                <li class="mb-2"><i class="bi bi-bank me-2"></i><strong>Domicilio Legal:</strong> 25 de Mayo 868, Corrientes, Argentina</li>
+                                <li class="mb-2"><i class="bi bi-telephone me-2"></i><strong>Teléfono Central:</strong> +54 379 442-0000</li>
+                                <li class="mb-0"><i class="bi bi-envelope me-2"></i><strong>Email Comercial:</strong> administracion@tienda.unne.edu.ar</li>
+                            </ul>
                         </div>
 
-                        <hr>
+                        <hr class="my-4">
 
-                        <div class="mt-4">
-                            <h5 class="fw-bold text-primary mb-1">Campus Deodoro Roca</h5>
-                            <p class="mb-1"><i class="bi bi-geo-alt"></i> Av. Libertad 5470, Corrientes</p>
-                            <p class="text-muted small"><i class="bi bi-clock"></i> Lunes a Viernes: 09:00 - 18:00 hs
-                            </p>
+                        {{-- Sección Existente: Ubicaciones --}}
+                        <h5 class="fw-bold text-primary mb-3" style="font-size: 1.1rem;">Nuestras Sucursales</h5>
+                        
+                        <div class="mb-3">
+                            <h6 class="fw-bold text-dark mb-1">Campus Sargento Cabral</h6>
+                            <p class="mb-1 text-secondary small"><i class="bi bi-geo-alt"></i> Juan Bautista Cabral 2131, Corrientes</p>
+                            <p class="text-muted small mb-0"><i class="bi bi-clock"></i> L-V: 08:00 - 20:00 hs</p>
                         </div>
+
+                        <div class="mb-0">
+                            <h6 class="fw-bold text-dark mb-1">Campus Deodoro Roca</h6>
+                            <p class="mb-1 text-secondary small"><i class="bi bi-geo-alt"></i> Av. Libertad 5470, Corrientes</p>
+                            <p class="text-muted small mb-0"><i class="bi bi-clock"></i> L-V: 09:00 - 18:00 hs</p>
+                        </div>
+
                     </div>
                 </div>
             </div>

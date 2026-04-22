@@ -2,7 +2,7 @@
     <div class="container-fluid">
 
         <a class="navbar-brand" href="#">
-            <img src="{{ asset('img/logo_unne.png') }}" alt="Logo UNNE" style="height: 80px; object-fit: contain;">
+            <img src="{{ asset('img/logo_unne.png') }}" alt="Logo UNNE" style="height: 65px; object-fit: contain;">
         </a>
 
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
