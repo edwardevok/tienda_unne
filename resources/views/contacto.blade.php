@@ -140,9 +140,9 @@
                 {{-- Cuerpo del Modal --}}
                 <div class="modal-body text-center p-5">
                     {{-- Usando el icono de Material Symbols que ya tenías en tu head --}}
-                    <span class="material-symbols-outlined mb-3" style="font-size: 5rem; color: #FF6600;">
-                        check_circle
-                    </span>
+                    <span class="material-symbols-rounded mb-3" style="font-size: 5rem; color: #FF6600;">
+    check_circle
+</span>
                     <h3 class="fw-bold mb-3" style="color: #021A54;">¡Gracias, <span id="modalNombreUsuario"></span>!</h3>
                     <p class="text-secondary fs-5 mb-0">
                         Nos pondremos en contacto a la brevedad respondiendo a tu correo:<br>
