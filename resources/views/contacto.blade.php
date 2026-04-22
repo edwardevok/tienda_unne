@@ -86,28 +86,79 @@
 
 
 
-        {{-- Ponte en contacto --}}
+    {{-- Ponte en contacto --}}
     <section class="container mb-5 pb-5 mt-0 pt-0 text-center">
-        <div class="mb-3">
-            <span class="material-symbols-outlined" style="font-size: 4rem; color: #021A54;">
-                forum
-            </span>
-        </div>
-
+        
         <h2 class="fw-bold mb-3" style="color: #021A54;">Ponte en contacto</h2>
-        <p class="text-secondary mx-auto" style="max-width: 600px;">
-            ¿Tiene alguna pregunta sobre su pedido o alguna consulta general?
-            Nuestro equipo está listo para ayudarte de forma inmediata por WhatsApp.
+        <p class="text-secondary mx-auto mb-5" style="max-width: 600px;">
+            ¿Tienes alguna duda sobre tu pedido o una consulta general de la Tienda UNNE?
+            Completa el formulario y te responderemos a la brevedad.
         </p>
 
-        <div class="mt-4">
-            <a href="https://wa.me/543794000000?text=Hola!%20Tengo%20una%20consulta%20sobre%20la%20Tienda%20UNNE"
-                target="_blank" class="btn btn-lg px-5 py-3 fw-bold text-white shadow"
-                style="background-color: #FF6600; border-radius: 50px; border: none; transition: 0.3s;">
-                <i class="bi bi-whatsapp me-2"></i> Contáctanos
-            </a>
-        </div>
+        {{-- Formulario de Contacto (con ID agregado) --}}
+        <form id="formContacto" action="#" class="text-start mx-auto p-4 shadow-sm rounded" style="max-width: 600px; background-color: #f8f9fa;">
+            
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="nombre" class="form-label text-secondary fw-bold">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ej. Juan" required>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="apellido" class="form-label text-secondary fw-bold">Apellido</label>
+                    <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Ej. Pérez" required>
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="mail" class="form-label text-secondary fw-bold">Correo Electrónico</label>
+                <input type="email" class="form-control" id="mail" name="mail" placeholder="tu@email.com" required>
+            </div>
+
+            <div class="mb-4">
+                <label for="consulta" class="form-label text-secondary fw-bold">Consulta</label>
+                <textarea class="form-control" id="consulta" name="consulta" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+            </div>
+
+            <div class="text-center">
+                <button type="submit" class="btn btn-lg px-5 py-3 fw-bold text-white shadow w-100" 
+                    style="background-color: #FF6600; border-radius: 50px; border: none; transition: 0.3s;">
+                    Enviar Mensaje
+                </button>
+            </div>
+        </form>
     </section>
+
+    <div class="modal fade" id="modalAgradecimiento" tabindex="-1" aria-labelledby="modalAgradecimientoLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 shadow-lg">
+                {{-- Encabezado con los colores de la Tienda --}}
+                <div class="modal-header text-white" style="background-color: #021A54; border-bottom: 4px solid #FF6600;">
+                    <h5 class="modal-title fw-bold" id="modalAgradecimientoLabel">¡Mensaje Recibido!</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                
+                {{-- Cuerpo del Modal --}}
+                <div class="modal-body text-center p-5">
+                    {{-- Usando el icono de Material Symbols que ya tenías en tu head --}}
+                    <span class="material-symbols-outlined mb-3" style="font-size: 5rem; color: #FF6600;">
+                        check_circle
+                    </span>
+                    <h3 class="fw-bold mb-3" style="color: #021A54;">¡Gracias, <span id="modalNombreUsuario"></span>!</h3>
+                    <p class="text-secondary fs-5 mb-0">
+                        Nos pondremos en contacto a la brevedad respondiendo a tu correo:<br>
+                        <strong class="text-dark" id="modalMailUsuario"></strong>
+                    </p>
+                </div>
+                
+                {{-- Footer del Modal --}}
+                <div class="modal-footer justify-content-center border-0 pb-4 pt-0">
+                    <button type="button" class="btn px-4 py-2 text-white fw-bold" style="background-color: #021A54; border-radius: 50px;" data-bs-dismiss="modal">
+                        Aceptar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
      {{-- Footer --}}
@@ -115,5 +166,31 @@
     {{-- Footer end --}}
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Capturamos el formulario y el modal
+        const formulario = document.getElementById("formContacto");
+        const modal = new bootstrap.Modal(document.getElementById("modalAgradecimiento"));
+
+        formulario.addEventListener("submit", function (evento) {
+            // Evitamos que la página se recargue al enviar
+            evento.preventDefault();
+
+            // Obtenemos los valores que el usuario ingresó
+            const nombreIngresado = document.getElementById("nombre").value;
+            const mailIngresado = document.getElementById("mail").value;
+
+            // Inyectamos esos valores en el HTML del modal
+            document.getElementById("modalNombreUsuario").innerText = nombreIngresado;
+            document.getElementById("modalMailUsuario").innerText = mailIngresado;
+
+            // Mostramos el modal
+            modal.show();
+
+            // Opcional: Limpiamos el formulario después de "enviar"
+            formulario.reset();
+        });
+    });
+</script>
 </body>
 </html>
