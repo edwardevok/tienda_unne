@@ -1,4 +1,9 @@
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Figtree", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -9,16 +14,15 @@ h1, h2, h3, h4, h5, h6 {
 
 /* 1. La caja principal que sostiene la imagen */
 .hero-quienes-somos {
-    background-image: url('../img/bannerC.jpg'); 
-    background-size: cover; 
-    background-position: center center; 
+    background-image: url("../img/bannerC.jpg");
+    background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
-    
+
     /* 👇 ¡ACÁ ESTÁ LA MAGIA DEL PARALLAX! 👇 */
-    
-    
-    min-height: 65vh; 
-    padding: 80px 0; 
+
+    min-height: 65vh;
+    padding: 80px 0;
 }
 
 /* 2. La capa oscura azulada (Overlay) */
@@ -29,7 +33,11 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: 100%;
     /* Un degradado sutil con tu azul institucional para darle el toque UNNE */
-    background: linear-gradient(to right, rgba(2, 26, 84, 0.85), rgba(2, 26, 84, 0.6));
+    background: linear-gradient(
+        to right,
+        rgba(2, 26, 84, 0.85),
+        rgba(2, 26, 84, 0.6)
+    );
     z-index: 1;
 }
 
@@ -61,8 +69,31 @@ h1, h2, h3, h4, h5, h6 {
     transform: scale(1.05);
 }
 
-
 .hover-lift:hover {
     transform: translateY(-5px) !important;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Metodos de pago */
+/* Estilos para logos uniformes en filas */
+.img-logo {
+    height: 25px;
+    width: auto;
+    max-width: 100%;
+}
+.img-logo-sm {
+    height: 18px;
+    width: auto;
+    max-width: 100%;
+    filter: grayscale(100%); /* Efecto gris para bancos */
+}
+/* El efecto gris se quita al pasar el mouse */
+.img-logo-sm:hover {
+    filter: grayscale(0%);
+}
+
+/* Asegurar alineación vertical perfecta en las filas */
+.medios-admitidos-filas .row {
+    margin-left: 0;
+    margin-right: 0;
 }
