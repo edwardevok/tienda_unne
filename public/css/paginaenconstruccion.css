@@ -1,0 +1,128 @@
+/* Título del Typewriter */
+.typewriter-title {
+    font-size: 1.8rem; /* Lo bajamos de 2.5rem a 1.8rem para PC */
+    font-weight: 800;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+/* Adaptación para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .typewriter-title {
+        font-size: 1.4rem; /* Lo bajamos de 1.8rem a 1.4rem para celulares */
+    }
+    .construction-image {
+        max-width: 300px;
+    }
+}
+
+/* Contenedor Principal Centrado */
+.maintenance-container {
+    display: flex;
+    justify-content: center; /* Centrado Horizontal */
+    align-items: center; /* Centrado Vertical */
+    width: 100%;
+    /* Cambia height por min-height y ajusta el cálculo */
+    min-height: calc(100vh - 300px);
+    padding: 40px 0; /* Un poco de respiro arriba y abajo */
+}
+
+/* Caja de contenido centrado */
+.content-box {
+    text-align: center;
+    padding: 20px;
+    max-width: 80%; /* Evita que el contenido toque los bordes en móviles */
+}
+
+/* Título del Typewriter */
+.typewriter-title {
+    font-size: 2.5rem; /* Tamaño grande y elegante */
+    font-weight: 800; /* Extra Bold */
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+/* Parte fija del texto */
+.fixed-text {
+    color: #021a54;
+}
+
+/* Parte dinámica (la que se borra y escribe) */
+.dynamic-text {
+    color: #ff6600; /* Naranja acento de TiendaUNNE */
+    position: relative;
+}
+
+/* Cursor parpadeante */
+.dynamic-text::after {
+    content: "";
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3px;
+    height: 1.2em;
+    background-color: #ff6600;
+    animation: blink 0.7s infinite; /* Efecto de parpadeo */
+}
+
+@keyframes blink {
+    0%,
+    100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Estilos de la Imagen */
+.construction-image {
+    max-width: 450px; /* Ancho máximo de la imagen */
+    width: 100%; /* Adaptable */
+    height: auto; /* Mantiene proporción */
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* Eliminamos box-shadow y border-radius para que flote perfectamente en el fondo blanco */
+}
+
+/* Adaptación para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .typewriter-title {
+        font-size: 1.8rem;
+    }
+    .construction-image {
+        max-width: 300px;
+    }
+}
+
+/* Contenedor del botón para separarlo de la imagen */
+.button-container {
+    margin-top: 40px;
+}
+
+/* Estilos del botón Volver */
+.btn-volver {
+    display: inline-block;
+    background-color: #ff6600; /* Naranja TiendaUNNE */
+    color: #ffffff;
+    padding: 12px 32px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 8px; /* Bordes suaves */
+    transition:
+        background-color 0.3s ease,
+        transform 0.2s ease;
+}
+
+/* Efecto Hover (al pasar el mouse) */
+.btn-volver:hover {
+    background-color: #e65c00; /* Un naranja apenas más oscuro */
+    color: #ffffff;
+    transform: translateY(
+        -3px
+    ); /* Efecto de que el botón se eleva un poquito */
+}

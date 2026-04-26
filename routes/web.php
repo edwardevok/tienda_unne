@@ -29,3 +29,7 @@ Route::get('/contacto', function () {
 Route::get('/productos', function () {
     return view('productos');
 });
+
+Route::get('/paginaenconstruccion', function () {
+    return view('paginaenconstruccion');
+});

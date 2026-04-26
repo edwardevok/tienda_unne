@@ -76,7 +76,8 @@
                     <div class="card-body text-center">
                         <h6 class="fw-bold">Remera Blanca UNNE</h6>
                         <p class="text-primary mb-3">$15.000</p>
-                        <button class="btn btn-orange btn-sm w-100">Agregar</button>
+                        <button onclick="window.location.href='{{ url('/paginaenconstruccion') }}'"
+                            class="btn btn-orange btn-sm w-100">Agregar</button>
                     </div>
                 </div>
             </div>
@@ -86,7 +87,8 @@
                     <div class="card-body text-center">
                         <h6 class="fw-bold">Hoodie Gris Premium</h6>
                         <p class="text-primary mb-3">$32.000</p>
-                        <button class="btn btn-orange btn-sm w-100">Agregar</button>
+                        <button onclick="window.location.href='{{ url('/paginaenconstruccion') }}'"
+                            class="btn btn-orange btn-sm w-100">Agregar</button>
                     </div>
                 </div>
             </div>
@@ -96,7 +98,8 @@
                     <div class="card-body text-center">
                         <h6 class="fw-bold">Campera Varsity UNNE</h6>
                         <p class="text-primary mb-3">$45.000</p>
-                        <button class="btn btn-orange btn-sm w-100">Agregar</button>
+                        <button onclick="window.location.href='{{ url('/paginaenconstruccion') }}'"
+                            class="btn btn-orange btn-sm w-100">Agregar</button>
                     </div>
                 </div>
             </div>
@@ -106,7 +109,8 @@
                     <div class="card-body text-center">
                         <h6 class="fw-bold">Chomba Polo Azul</h6>
                         <p class="text-primary mb-3">$22.000</p>
-                        <button class="btn btn-orange btn-sm w-100">Agregar</button>
+                        <button onclick="window.location.href='{{ url('/paginaenconstruccion') }}'"
+                            class="btn btn-orange btn-sm w-100">Agregar</button>
                     </div>
                 </div>
             </div>
@@ -117,7 +121,8 @@
                     <div class="card-body text-center">
                         <h6 class="fw-bold">Mochila Porta Notebook</h6>
                         <p class="text-primary mb-3">$38.000</p>
-                        <button class="btn btn-orange btn-sm w-100">Agregar</button>
+                        <button onclick="window.location.href='{{ url('/paginaenconstruccion') }}'"
+                            class="btn btn-orange btn-sm w-100">Agregar</button>
                     </div>
                 </div>
             </div>
@@ -127,7 +132,8 @@
                     <div class="card-body text-center">
                         <h6 class="fw-bold">Gorra UNNE</h6>
                         <p class="text-primary mb-3">$7.500</p>
-                        <button class="btn btn-orange btn-sm w-100">Agregar</button>
+                        <button onclick="window.location.href='{{ url('/paginaenconstruccion') }}'"
+                            class="btn btn-orange btn-sm w-100">Agregar</button>
                     </div>
                 </div>
             </div>
@@ -137,7 +143,8 @@
                     <div class="card-body text-center">
                         <h6 class="fw-bold">Tote Bag Ecológica</h6>
                         <p class="text-primary mb-3">$5.000</p>
-                        <button class="btn btn-orange btn-sm w-100">Agregar</button>
+                        <button onclick="window.location.href='{{ url('/paginaenconstruccion') }}'"
+                            class="btn btn-orange btn-sm w-100">Agregar</button>
                     </div>
                 </div>
             </div>
@@ -147,7 +154,8 @@
                     <div class="card-body text-center">
                         <h6 class="fw-bold">Llavero Metálico</h6>
                         <p class="text-primary mb-3">$3.500</p>
-                        <button class="btn btn-orange btn-sm w-100">Agregar</button>
+                        <button onclick="window.location.href='{{ url('/paginaenconstruccion') }}'"
+                            class="btn btn-orange btn-sm w-100">Agregar</button>
                     </div>
                 </div>
             </div>
@@ -157,7 +165,8 @@
                     <div class="card-body text-center">
                         <h6 class="fw-bold">Pulsera Bordada</h6>
                         <p class="text-primary mb-3">$2.000</p>
-                        <button class="btn btn-orange btn-sm w-100">Agregar</button>
+                        <button onclick="window.location.href='{{ url('/paginaenconstruccion') }}'"
+                            class="btn btn-orange btn-sm w-100">Agregar</button>
                     </div>
                 </div>
             </div>
@@ -168,7 +177,8 @@
                     <div class="card-body text-center">
                         <h6 class="fw-bold">Agenda 2026 UNNE</h6>
                         <p class="text-primary mb-3">$14.000</p>
-                        <button class="btn btn-orange btn-sm w-100">Agregar</button>
+                        <button onclick="window.location.href='{{ url('/paginaenconstruccion') }}'"
+                            class="btn btn-orange btn-sm w-100">Agregar</button>
                     </div>
                 </div>
             </div>
@@ -178,7 +188,8 @@
                     <div class="card-body text-center">
                         <h6 class="fw-bold">Carpeta Universitaria</h6>
                         <p class="text-primary mb-3">$9.500</p>
-                        <button class="btn btn-orange btn-sm w-100">Agregar</button>
+                        <button onclick="window.location.href='{{ url('/paginaenconstruccion') }}'"
+                            class="btn btn-orange btn-sm w-100">Agregar</button>
                     </div>
                 </div>
             </div>
@@ -188,7 +199,8 @@
                     <div class="card-body text-center">
                         <h6 class="fw-bold">Lapicera Ejecutiva</h6>
                         <p class="text-primary mb-3">$6.000</p>
-                        <button class="btn btn-orange btn-sm w-100">Agregar</button>
+                        <button onclick="window.location.href='{{ url('/paginaenconstruccion') }}'"
+                            class="btn btn-orange btn-sm w-100">Agregar</button>
                     </div>
                 </div>
             </div>
@@ -198,7 +210,8 @@
                     <div class="card-body text-center">
                         <h6 class="fw-bold">Mousepad Ergonómico</h6>
                         <p class="text-primary mb-3">$4.800</p>
-                        <button class="btn btn-orange btn-sm w-100">Agregar</button>
+                        <button onclick="window.location.href='{{ url('/paginaenconstruccion') }}'"
+                            class="btn btn-orange btn-sm w-100">Agregar</button>
                     </div>
                 </div>
             </div>
@@ -208,7 +221,8 @@
                     <div class="card-body text-center">
                         <h6 class="fw-bold">Pack Stickers UNNE</h6>
                         <p class="text-primary mb-3">$1.500</p>
-                        <button class="btn btn-orange btn-sm w-100">Agregar</button>
+                        <button onclick="window.location.href='{{ url('/paginaenconstruccion') }}'"
+                            class="btn btn-orange btn-sm w-100">Agregar</button>
                     </div>
                 </div>
             </div>
@@ -219,7 +233,8 @@
                     <div class="card-body text-center">
                         <h6 class="fw-bold">Taza de Cerámica</h6>
                         <p class="text-primary mb-3">$4.500</p>
-                        <button class="btn btn-orange btn-sm w-100">Agregar</button>
+                        <button onclick="window.location.href='{{ url('/paginaenconstruccion') }}'"
+                            class="btn btn-orange btn-sm w-100">Agregar</button>
                     </div>
                 </div>
             </div>
@@ -229,7 +244,8 @@
                     <div class="card-body text-center">
                         <h6 class="fw-bold">Termo Negro Mate</h6>
                         <p class="text-primary mb-3">$25.000</p>
-                        <button class="btn btn-orange btn-sm w-100">Agregar</button>
+                        <button onclick="window.location.href='{{ url('/paginaenconstruccion') }}'"
+                            class="btn btn-orange btn-sm w-100">Agregar</button>
                     </div>
                 </div>
             </div>
@@ -239,7 +255,8 @@
                     <div class="card-body text-center">
                         <h6 class="fw-bold">Mate UNNE</h6>
                         <p class="text-primary mb-3">$12.500</p>
-                        <button class="btn btn-orange btn-sm w-100">Agregar</button>
+                        <button onclick="window.location.href='{{ url('/paginaenconstruccion') }}'"
+                            class="btn btn-orange btn-sm w-100">Agregar</button>
                     </div>
                 </div>
             </div>
@@ -249,7 +266,8 @@
                     <div class="card-body text-center">
                         <h6 class="fw-bold">Botella Deportiva</h6>
                         <p class="text-primary mb-3">$8.900</p>
-                        <button class="btn btn-orange btn-sm w-100">Agregar</button>
+                        <button onclick="window.location.href='{{ url('/paginaenconstruccion') }}'"
+                            class="btn btn-orange btn-sm w-100">Agregar</button>
                     </div>
                 </div>
             </div>
@@ -259,7 +277,8 @@
                     <div class="card-body text-center">
                         <h6 class="fw-bold">Bufanda Institucional</h6>
                         <p class="text-primary mb-3">$6.800</p>
-                        <button class="btn btn-orange btn-sm w-100">Agregar</button>
+                        <button onclick="window.location.href='{{ url('/paginaenconstruccion') }}'"
+                            class="btn btn-orange btn-sm w-100">Agregar</button>
                     </div>
                 </div>
             </div>
