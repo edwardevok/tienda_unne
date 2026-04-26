@@ -20,7 +20,7 @@
                     <a class="nav-link nav-link-custom" href="/quienes-somos">Quienes Somos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-custom" href="#">Productos</a>
+                    <a class="nav-link nav-link-custom" href="/productos">Productos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link nav-link-custom" href="/comercializacion">Comercializacion</a>

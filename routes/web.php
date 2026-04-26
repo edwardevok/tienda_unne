@@ -25,3 +25,7 @@ Route::get('/terminos', function () {
 Route::get('/contacto', function () {
     return view('contacto');
 });
+
+Route::get('/productos', function () {
+    return view('productos');
+});
