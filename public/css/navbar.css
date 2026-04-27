@@ -1,0 +1,88 @@
+/* --- Variables Globales --- */
+:root {
+    --azul-unne: #021a54;
+    --azul-unne-suave: #263b6a;
+    --naranja-unne: #ff6600;
+    --blanco: #ffffff;
+}
+
+/* --- Tipografía Base --- */
+body {
+    font-family: "Figtree", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Figtree", sans-serif;
+    font-weight: 700;
+    color: var(--azul-unne);
+}
+
+/* --- NAVBAR CUSTOM --- */
+.nav-link-custom {
+    position: relative;
+    color: rgba(255, 255, 255, 0.7) !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link-custom:hover,
+.nav-link-custom.active {
+    color: var(--blanco) !important;
+}
+
+.nav-link-custom::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 2px;
+    background-color: var(--naranja-unne);
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-link-custom.active::after,
+.nav-link-custom:not(.active):hover::after {
+    width: 80%;
+}
+
+/* --- FOOTER CUSTOM --- */
+.footer-link-custom {
+    color: var(--blanco) !important;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.footer-link-custom:hover {
+    color: var(--naranja-unne) !important;
+    transform: translateX(5px);
+}
+
+.footer-social-icon {
+    color: var(--blanco);
+    transition: color 0.3s ease;
+    font-size: 1.5rem;
+}
+
+.footer-social-icon:hover {
+    color: var(--naranja-unne);
+}
+
+.texto_foot2 {
+    color: #bdbdbd;
+    font-size: 0.9rem;
+}
+
+.material-symbols-rounded {
+    font-variation-settings:
+        "FILL" 0,
+        "wght" 400,
+        "GRAD" 0,
+        "opsz" 48;
+}

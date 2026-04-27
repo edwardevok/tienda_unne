@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg py-2 sticky-top" style="background-color: #021A54;" data-bs-theme="dark">
     <div class="container-fluid">
 
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="{{ url('/') }}">
             <img src="{{ asset('img/logo_unne.png') }}" alt="Logo UNNE" style="height: 65px; object-fit: contain;">
         </a>
 
@@ -13,23 +13,28 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto text-center">
                 <li class="nav-item">
-                    <a class="nav-link nav-link-custom active text-white fw-bold" aria-current="page"
+                    <a class="nav-link nav-link-custom {{ Request::is('index') || Request::is('/') ? 'active fw-bold text-white' : '' }}"
                         href="/index">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-custom" href="/quienes-somos">Quienes Somos</a>
+                    <a class="nav-link nav-link-custom {{ Request::is('quienes-somos') ? 'active fw-bold text-white' : '' }}"
+                        href="/quienes-somos">Quiénes Somos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-custom" href="/productos">Productos</a>
+                    <a class="nav-link nav-link-custom {{ Request::is('productos') ? 'active fw-bold text-white' : '' }}"
+                        href="/productos">Productos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-custom" href="/comercializacion">Comercializacion</a>
+                    <a class="nav-link nav-link-custom {{ Request::is('comercializacion') ? 'active fw-bold text-white' : '' }}"
+                        href="/comercializacion">Comercialización</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-custom" href="/contacto">Contacto</a>
+                    <a class="nav-link nav-link-custom {{ Request::is('contacto') ? 'active fw-bold text-white' : '' }}"
+                        href="/contacto">Contacto</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-custom" href="/terminos">Terminos y Condiciones</a>
+                    <a class="nav-link nav-link-custom {{ Request::is('terminos') ? 'active fw-bold text-white' : '' }}"
+                        href="/terminos">Términos y Condiciones</a>
                 </li>
             </ul>
         </div>

@@ -1,100 +1,151 @@
-h1, h2, h3, h4, h5, h6 {
+/* --- Importación de Fuentes --- */
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+/* --- Variables y Estilos Base --- */
+:root {
+    --azul-unne: #021a54;
+    --azul-unne-suave: #263b6a;
+    --naranja-unne: #ff6600;
+    --gris-claro: #f8f9fa;
+    --texto-mutado: #6c757d;
+}
+
+body {
     font-family: "Figtree", sans-serif;
-    font-optical-sizing: auto;
+    background-color: #ffffff;
+    color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Figtree", sans-serif;
     font-weight: 700;
-    color: #021a54;
+    color: var(--azul-unne);
 }
 
-/* --- Banner de Quiénes Somos --- */
+/* --- Utilidades Generales --- */
+.texto-azul-unne {
+    color: var(--azul-unne) !important;
+}
 
-/* 1. La caja principal que sostiene la imagen */
+.texto-naranja {
+    color: var(--naranja-unne) !important;
+}
+
+/* --- Banner de Quiénes Somos (Hero) --- */
 .hero-quienes-somos {
-    background-image: url('../img/pibes.png'); 
-    background-size: cover; 
-    background-position: center center; 
+    background-image: url("../img/pibes.png");
+    background-size: cover;
+    background-position: center center;
     background-repeat: no-repeat;
-    
-    /* 👇 ¡ACÁ ESTÁ LA MAGIA DEL PARALLAX! 👇 */
-    
-    
-    min-height: 65vh; 
-    padding: 80px 0; 
+    min-height: 60vh;
+    padding: 100px 0;
 }
 
-/* 2. La capa oscura azulada (Overlay) */
 .overlay-hero {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    /* Un degradado sutil con tu azul institucional para darle el toque UNNE */
-    background: linear-gradient(to right, rgba(2, 26, 84, 0.85), rgba(2, 26, 84, 0.6));
+    background: linear-gradient(
+        to right,
+        rgba(2, 26, 84, 0.9),
+        rgba(2, 26, 84, 0.6)
+    );
     z-index: 1;
 }
 
-/* --- Utilidades de Marca UNNE --- */
-/* Esta clase te va a servir para cualquier título azul de la página */
-.texto-azul-unne {
-    color: #021A54 !important;
+/* --- Sección Misión, Visión, Valores (Imágenes Limpias) --- */
+.contenedor-imagen-limpia {
+    border-radius: 20px;
+    overflow: hidden;
+    line-height: 0;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.contenedor-imagen-limpia:hover {
+    transform: translateY(-10px);
+}
+
+.img-fluida-quienes {
+    width: 100%;
+    height: 380px; /* Altura ideal para destacar la composición 16:9 */
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .img-fluida-quienes {
+        height: 280px;
+    }
+
+    .hero-quienes-somos {
+        min-height: 40vh;
+        padding: 60px 0;
+    }
 }
 
 /* --- Sección Nuestro Equipo --- */
-.equipo-img {
-    object-fit: cover; 
-    width: 100%; 
-    max-height: 280px;
-}
-
-.equipo-rol {
-    color: #FF6600; 
-    letter-spacing: 1px; 
-    font-size: 0.9rem;
-}
-
-.equipo-texto {
-    line-height: 1.8;
-}
-
-/* --- Nueva Sección de Equipo (Fondo Azul) --- */
 .seccion-equipo-azul {
-    background-color: #263B6A; /* El azul que elegiste */
-    padding: 0px 0;
-    margin-top: -1px;
-    padding-bottom: 5rem;
+    background-color: var(--azul-unne-suave);
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+    margin-top: -2px; /* Solapamiento para evitar líneas blancas con el SVG */
 }
 
 .card-equipo-nueva {
     border: none;
-    border-radius: 20px;
-    transition: transform 0.3s ease;
+    border-radius: 24px;
+    transition: all 0.3s ease;
     text-align: center;
-    padding: 30px;
-    height: 100%; /* Para que ambas midan lo mismo */
+    padding: 40px 30px;
+    height: 100%;
+    background-color: #ffffff;
 }
 
 .card-equipo-nueva:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15) !important;
 }
 
-/* Estilo corregido para la foto del equipo */
 .foto-chica-equipo {
-    width: 100%;             /* Le permite achicarse si la tarjeta se vuelve muy angosta */
-    max-width: 15rem;        /* Le pone el tope máximo que vos querías */
-    aspect-ratio: 1 / 1;     /* ¡LA MAGIA! Fuerza a que el alto siempre sea igual al ancho */
-    object-fit: cover;       /* Recorta la foto internamente para no deformar la cara */
-    border-radius: 50%;      /* Dibuja el círculo perfecto */
-    margin: 0 auto 20px auto; 
-    border: 4px solid #f8f9fa; 
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 25px auto;
+    border: 5px solid var(--gris-claro);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
+
 .nombre-equipo {
-    color: #021A54;
-    font-weight: 700;
+    color: var(--azul-unne);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
 
 .desc-equipo {
-    font-size: 0.95rem;
-    color: #6c757d;
-    line-height: 1.6;
+    font-size: 1rem;
+    color: var(--texto-mutado);
+    line-height: 1.7;
+}
+
+/* --- Iconos Material Symbols --- */
+.material-symbols-rounded {
+    font-variation-settings:
+        "FILL" 1,
+        "wght" 400,
+        "GRAD" 0,
+        "opsz" 24;
+    vertical-align: middle;
+}
+
+/* --- Ajuste de la Curva SVG --- */
+svg {
+    filter: drop-shadow(0px -2px 0px var(--gris-claro));
 }
