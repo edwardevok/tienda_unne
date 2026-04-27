@@ -180,3 +180,57 @@
     margin-right: 0;
     margin-left: 0;
 }
+
+/* --- Embla Carousel con AutoScroll y 3 Productos --- */
+.embla {
+    overflow: hidden;
+    width: 100%;
+}
+
+.embla__container {
+    display: flex;
+    touch-action: pan-y pinch-zoom; 
+}
+
+/* Acá definimos que se vean 3 productos exactos */
+.embla__slide {
+    flex: 0 0 33.3333%; 
+    min-width: 0;
+    padding: 0 15px; /* Espacio entre tarjetas */
+}
+
+/* Sombreado de tarjetas */
+.product-card {
+    transition: transform 0.3s ease;
+}
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Botones laterales */
+.btn-embla-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+    color: #021A54;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.btn-embla-nav:hover {
+    background-color: #FF6600;
+    color: white;
+}
+
+.btn-embla-prev { left: -20px; }
+.btn-embla-next { right: -20px; }
