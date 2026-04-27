@@ -262,7 +262,7 @@
         
         // Configuramos la velocidad del AutoScroll
         const autoScrollOptions = { 
-            speed: 1, 
+            speed: 2, 
             playOnInit: true,
             stopOnInteraction: false // Lo ponemos en false porque manejaremos la interacción nosotros
         };

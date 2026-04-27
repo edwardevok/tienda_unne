@@ -192,11 +192,27 @@
     touch-action: pan-y pinch-zoom; 
 }
 
-/* Acá definimos que se vean 3 productos exactos */
+/* --- Responsividad del Carrusel --- */
+
+/* 1. Por defecto (Celulares): 1 producto a la vez (100%) */
 .embla__slide {
-    flex: 0 0 33.3333%; 
+    flex: 0 0 100%; 
     min-width: 0;
-    padding: 0 15px; /* Espacio entre tarjetas */
+    padding: 0 15px;
+}
+
+/* 2. Pantallas medianas (Tablets): 2 productos a la vez (50%) */
+@media (min-width: 768px) {
+    .embla__slide {
+        flex: 0 0 50%; 
+    }
+}
+
+/* 3. Pantallas grandes (Computadoras): 3 productos a la vez (33.3%) */
+@media (min-width: 992px) {
+    .embla__slide {
+        flex: 0 0 33.3333%; 
+    }
 }
 
 /* Sombreado de tarjetas */
@@ -234,3 +250,38 @@
 
 .btn-embla-prev { left: -20px; }
 .btn-embla-next { right: -20px; }
+
+/* --- Ajuste del tamaño de las fotos (Mobile First) --- */
+/* --- Ajuste del tamaño de las fotos (Escala de 3 niveles) --- */
+
+/* 1. Celulares (Queda chico y prolijo) */
+.contenedor-foto-producto {
+    max-width: 220px; 
+    margin: 0 auto; 
+    aspect-ratio: 1 / 1; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-foto-producto img {
+    max-height: 90%; 
+    max-width: 90%;
+    object-fit: contain; 
+}
+
+/* 2. Tablets (2 productos por fila) */
+@media (min-width: 768px) {
+    .contenedor-foto-producto {
+        max-width: 220px; /* Aumentamos para tablet */
+    }
+}
+
+/* 3. Computadoras (3 productos por fila) */
+@media (min-width: 992px) {
+    .contenedor-foto-producto {
+        /* ¡Acá le damos el tamaño grande para escritorio! */
+        /* Podés subirlo a 280px o 300px si las querés aún más imponentes */
+        max-width: 300px; 
+    }
+}
