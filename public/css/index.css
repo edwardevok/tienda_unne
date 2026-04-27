@@ -41,6 +41,13 @@
     color: #021a54;
 }
 
+.img-presentacion {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+    background: transparent !important; /* Por si la imagen tiene un fondo blanco interno */
+}
+
 /* --- CATEGORÍAS --- */
 .category-card {
     transition:
@@ -91,4 +98,85 @@
 .btn-carrusel {
     filter: invert(1);
     width: 5%;
+}
+
+/* --- Sección Categorías Cuadradas --- */
+.categoria-cuadrado {
+    display: block;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Esto garantiza que siempre sean cuadrados perfectos */
+    background-size: cover;
+    background-position: center;
+    text-decoration: none !important;
+    overflow: hidden;
+}
+
+.categoria-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(2, 26, 84, 0.4); /* Filtro azul traslúcido inicial */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: all 0.4s ease;
+}
+
+.categoria-titulo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+    color: white !important; /* Forzamos blanco sobre la imagen */
+}
+
+.categoria-overlay span {
+    font-size: 3rem;
+    transition: transform 0.4s ease;
+}
+
+/* Efectos al pasar el mouse */
+.categoria-cuadrado:hover .categoria-overlay {
+    background-color: rgba(
+        255,
+        102,
+        0,
+        0.7
+    ); /* Cambia a naranja UNNE al hacer hover */
+}
+
+.categoria-cuadrado:hover span {
+    transform: translateY(-10px);
+}
+
+.categoria-cuadrado:hover {
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
+    .categoria-titulo {
+        font-size: 1.1rem;
+    }
+    .categoria-overlay span {
+        font-size: 2rem;
+    }
+}
+
+/* Reset para evitar franjas blancas en la sección de categorías */
+.container-fluid.px-0.m-0 {
+    padding: 0 !important;
+    margin: 0 !important;
+    line-height: 0; /* Evita espacios extra por elementos inline-block */
+}
+
+.row.g-0 {
+    margin-right: 0;
+    margin-left: 0;
 }

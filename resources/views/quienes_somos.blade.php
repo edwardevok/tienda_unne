@@ -136,8 +136,11 @@
                             <img src="{{ asset('img/edu.jpg') }}" alt="Eduardo López" class="foto-chica-equipo">
                             <h3 class="h4 nombre-equipo">Eduardo López</h3>
                             <p class="desc-equipo">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quod, corporis quia
-                                dolorem et debitis maxime reiciendis rerum ab sequi.
+                                Técnico en Desarrollo de Software y actual estudiante de la Licenciatura en Sistemas.
+                                Originario de Curuzú Cuatiá, Eduardo integra la tenacidad del boxeo con la
+                                agilidad mental del mundo gaming. Inspirado por la dinámica de Sonic, se enfoca
+                                en el desarrollo de soluciones rápidas y eficientes, aplicando la disciplina
+                                del deportista y la visión estratégica del jugador en cada proyecto tecnológico.
                             </p>
                         </div>
                     </div>
@@ -149,8 +152,11 @@
                             <img src="{{ asset('img/joan.jpg') }}" alt="Joan Mauri" class="foto-chica-equipo">
                             <h3 class="h4 nombre-equipo">Joan Mauri</h3>
                             <p class="desc-equipo">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat tempora commodi atque
-                                quo exercitationem numquam repellat debitis officia reprehenderit.
+                                Técnico en Desarrollo de Software y actual estudiante de la Licenciatura en Sistemas.
+                                Desde el interior de Corrientes, Joan traslada la precisión de la gastronomía
+                                y la constancia del boxeo al campo del desarrollo de sistemas. Su enfoque
+                                se basa en la meticulosidad y el equilibrio, entendiendo que la arquitectura
+                                de software exitosa nace de la combinación exacta de técnica, orden y creatividad.
                             </p>
                         </div>
                     </div>

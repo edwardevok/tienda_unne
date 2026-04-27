@@ -55,8 +55,8 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5 text-center d-none d-lg-block">
-                    <img src="{{ asset('img/img1.png') }}" alt="Comunidad UNNE"
-                        class="img-fluid rounded shadow-sm img-presentacion">
+                    <img src="{{ asset('img/img1.png') }}" alt="Comunidad UNNE" class="img-fluid img-presentacion">
+                    {{-- Quitamos 'rounded' y 'shadow-sm' --}}
                 </div>
                 <div class="col-12 col-lg-7">
                     <h1 class="display-5 fw-bold mb-4">
@@ -77,49 +77,49 @@
     </section>
 
     {{-- Sección de Categorías --}}
-    <section class="container my-5 py-4">
-        <h2 class="display-4 fw-bold mb-5 text-center">Categorías</h2>
-        <div class="row g-4">
-            <div class="col-6 col-md-3">
-                <a href="/productos" class="card h-100 border-0 category-card text-decoration-none">
-                    <div class="text-center pt-4">
-                        <span class="material-symbols-rounded icono-categoria">apparel</span>
-                    </div>
-                    <div class="card-body text-center">
-                        <h5 class="card-title fw-bold">Indumentaria</h5>
-                    </div>
-                </a>
-            </div>
-            <div class="col-6 col-md-3">
-                <a href="/productos" class="card h-100 border-0 category-card text-decoration-none">
-                    <div class="text-center pt-4">
-                        <span class="material-symbols-rounded icono-categoria">personal_bag</span>
-                    </div>
-                    <div class="card-body text-center">
-                        <h5 class="card-title fw-bold">Accesorios</h5>
+    <section class="container-fluid px-0 m-0"> {{-- m-0 elimina márgenes externos --}}
+        <div class="row g-0 m-0 p-0"> {{-- g-0 y m-0 aseguran que la fila no tenga desbordes ni espacios --}}
+
+            <div class="col-6 col-lg-3">
+                <a href="/productos" class="categoria-cuadrado"
+                    style="background-image: url('{{ asset('img/indumentaria.png') }}');">
+                    <div class="categoria-overlay">
+                        <span class="material-symbols-rounded mb-2">apparel</span>
+                        <h3 class="categoria-titulo">Indumentaria</h3>
                     </div>
                 </a>
             </div>
-            <div class="col-6 col-md-3">
-                <a href="/productos" class="card h-100 border-0 category-card text-decoration-none">
-                    <div class="text-center pt-4">
-                        <span class="material-symbols-rounded icono-categoria">ink_pen</span>
-                    </div>
-                    <div class="card-body text-center">
-                        <h5 class="card-title fw-bold">Libreria y Estudio</h5>
-                    </div>
-                </a>
-            </div>
-            <div class="col-6 col-md-3">
-                <a href="/productos" class="card h-100 border-0 category-card text-decoration-none">
-                    <div class="text-center pt-4">
-                        <span class="material-symbols-rounded icono-categoria">water_bottle</span>
-                    </div>
-                    <div class="card-body text-center">
-                        <h5 class="card-title fw-bold">Hogar y Utilidad</h5>
+
+            <div class="col-6 col-lg-3">
+                <a href="/productos" class="categoria-cuadrado"
+                    style="background-image: url('{{ asset('img/accesorios.png') }}');">
+                    <div class="categoria-overlay">
+                        <span class="material-symbols-rounded mb-2">personal_bag</span>
+                        <h3 class="categoria-titulo">Accesorios</h3>
                     </div>
                 </a>
             </div>
+
+            <div class="col-6 col-lg-3">
+                <a href="/productos" class="categoria-cuadrado"
+                    style="background-image: url('{{ asset('img/libreria.png') }}');">
+                    <div class="categoria-overlay">
+                        <span class="material-symbols-rounded mb-2">ink_pen</span>
+                        <h3 class="categoria-titulo">Útiles</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-6 col-lg-3">
+                <a href="/productos" class="categoria-cuadrado"
+                    style="background-image: url('{{ asset('img/hogar.png') }}');">
+                    <div class="categoria-overlay">
+                        <span class="material-symbols-rounded mb-2">water_bottle</span>
+                        <h3 class="categoria-titulo">Bazar</h3>
+                    </div>
+                </a>
+            </div>
+
         </div>
     </section>
 

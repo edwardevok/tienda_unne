@@ -35,9 +35,6 @@
             <div class="row justify-content-center">
                 <div class="col-12 col-md-8">
                     {{-- Un pequeño subtítulo naranja para darle elegancia --}}
-                    <span class="text-uppercase fw-bold mb-2 d-block" style="color: #FF6600; letter-spacing: 2px;">
-                        CONECTÁ CON NOSOTROS
-                    </span>
                     <h1 class="display-3 fw-bold text-white mb-3">¡Escribinos!</h1>
                     <p class="lead text-white-50 mb-0">
                         Estamos para escucharte. Aquí resolvemos tus dudas sobre envíos, cambios o reclamos de la Tienda
@@ -136,8 +133,8 @@
                 </div>
                 <div class="col-md-6 mb-3">
                     <label for="apellido" class="form-label text-secondary fw-bold">Apellido</label>
-                    <input type="text" class="form-control" id="apellido" name="apellido"
-                        placeholder="Ej. Pérez" required>
+                    <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Ej. Pérez"
+                        required>
                 </div>
             </div>
 

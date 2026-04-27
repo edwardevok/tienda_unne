@@ -38,6 +38,9 @@
             <div class="row justify-content-center">
                 <div class="col-12 col-md-8">
                     <h1 class="display-3 fw-bold text-white mb-3">Comercializacion</h1>
+                    <p class="lead text-white-50 mb-0">
+                        Pagos seguros, envíos rápidos y todo lo que necesitás saber
+                    </p>
                 </div>
             </div>
         </div>
