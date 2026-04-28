@@ -61,10 +61,10 @@
 </footer>
 
 <script>
-    // 1. Guardamos el título original de la página
+    // 1. Se guarda el titulo original de la pagina
     let tituloOriginal = document.title;
 
-    // 2. Creamos nuestra lista de mensajes persuasivos (y amenazantes 😅)
+    // 2. Lista de mensajes
     const mensajesAusencia = [
         "¡Ey, volvé! 🛒",
         "¡Tenemos Descuentos! 💸",
@@ -91,11 +91,9 @@
             }, 2000);
 
         } else {
-            // El usuario volvió asustado por Taller 1. 
             // Apagamos el reloj para que deje de cambiar el texto
             clearInterval(intervaloTitulo);
 
-            // Restauramos el título normal de la tienda
             document.title = tituloOriginal;
         }
     });

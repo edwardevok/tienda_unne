@@ -136,11 +136,13 @@
                             <img src="{{ asset('img/edu.jpg') }}" alt="Eduardo López" class="foto-chica-equipo">
                             <h3 class="h4 nombre-equipo">Eduardo López</h3>
                             <p class="desc-equipo">
-                                Técnico en Desarrollo de Software y actual estudiante de la Licenciatura en Sistemas.
-                                Originario de Curuzú Cuatiá, Eduardo integra la tenacidad del boxeo con la
-                                agilidad mental del mundo gaming. Inspirado por la dinámica de Sonic, se enfoca
-                                en el desarrollo de soluciones rápidas y eficientes, aplicando la disciplina
-                                del deportista y la visión estratégica del jugador en cada proyecto tecnológico.
+                                Técnico en Desarrollo de Software y estudiante de la Licenciatura en Sistemas. Enfocado
+                                en la arquitectura y creación de soluciones tecnológicas, cuenta con sólidos
+                                conocimientos en desarrollo web, modelado de bases de datos y la integración de
+                                herramientas de Inteligencia Artificial. Su base técnica se apoya en el dominio de
+                                múltiples paradigmas, destacando la Programación Orientada a Objetos (POO) y la
+                                programación funcional para diseñar sistemas eficientes y escalables. En su tiempo
+                                libre, disfruta del gaming y la práctica de boxeo.
                             </p>
                         </div>
                     </div>
@@ -152,11 +154,13 @@
                             <img src="{{ asset('img/joan.jpg') }}" alt="Joan Mauri" class="foto-chica-equipo">
                             <h3 class="h4 nombre-equipo">Joan Mauri</h3>
                             <p class="desc-equipo">
-                                Técnico en Desarrollo de Software y actual estudiante de la Licenciatura en Sistemas.
-                                Desde el interior de Corrientes, Joan traslada la precisión de la gastronomía
-                                y la constancia del boxeo al campo del desarrollo de sistemas. Su enfoque
-                                se basa en la meticulosidad y el equilibrio, entendiendo que la arquitectura
-                                de software exitosa nace de la combinación exacta de técnica, orden y creatividad.
+                                Técnico en Desarrollo de Software y estudiante de la Licenciatura en Sistemas. Orientado
+                                a la calidad del código y la implementación de plataformas robustas, domina el
+                                ecosistema del desarrollo web y la gestión estructurada de bases de datos. Su perfil
+                                combina una fuerte base lógica en Programación Orientada a Objetos (POO) y programación
+                                funcional, junto con un interés activo en las nuevas tecnologías aplicadas a la
+                                Inteligencia Artificial. En su tiempo libre, encuentra el equilibrio entre la constancia
+                                del boxeo y su afición por la gastronomía.
                             </p>
                         </div>
                     </div>
