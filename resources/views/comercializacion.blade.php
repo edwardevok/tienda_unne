@@ -299,13 +299,12 @@
                     <div class="accordion accordion-flush border rounded shadow-sm" id="faqGeneral">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#gen1">
+                                <button class="accordion-button collapsed fw-bold" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#gen1">
                                     ¿Quiénes pueden optar a un descuento del 25% para estudiantes?
                                 </button>
                             </h2>
-                            <div id="gen1" class="accordion-collapse collapse show"
-                                data-bs-parent="#faqGeneral">
+                            <div id="gen1" class="accordion-collapse collapse" data-bs-parent="#faqGeneral">
                                 <div class="accordion-body text-secondary">
                                     <p>Todos los estudiantes matriculados en la UNNE con correo institucional activo
                                         acceden al beneficio automáticamente al validar sus datos.</p>
