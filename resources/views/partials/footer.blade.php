@@ -59,3 +59,44 @@
         </div>
     </div>
 </footer>
+
+<script>
+    // 1. Guardamos el título original de la página
+    let tituloOriginal = document.title;
+
+    // 2. Creamos nuestra lista de mensajes persuasivos (y amenazantes 😅)
+    const mensajesAusencia = [
+        "¡Ey, volvé! 🛒",
+        "¡Tenemos Descuentos! 💸",
+        "¡Reprobarás Taller 1! 😱"
+    ];
+
+    let intervaloTitulo; // Variable para guardar el "reloj"
+    let indiceActual = 0; // Para saber qué mensaje toca mostrar
+
+    // 3. Escuchamos si el usuario se va o vuelve
+    document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+            // El usuario se fue. 
+            // Mostramos el primer mensaje inmediatamente
+            document.title = mensajesAusencia[0];
+            indiceActual = 1;
+
+            // Iniciamos un reloj que cambia el título cada 2 segundos (2000 milisegundos)
+            intervaloTitulo = setInterval(function() {
+                document.title = mensajesAusencia[indiceActual];
+
+                // Pasamos al siguiente mensaje. Si llegamos al final, volvemos a empezar al índice 0
+                indiceActual = (indiceActual + 1) % mensajesAusencia.length;
+            }, 2000);
+
+        } else {
+            // El usuario volvió asustado por Taller 1. 
+            // Apagamos el reloj para que deje de cambiar el texto
+            clearInterval(intervaloTitulo);
+
+            // Restauramos el título normal de la tienda
+            document.title = tituloOriginal;
+        }
+    });
+</script>
