@@ -293,6 +293,7 @@
 
 
     <script>
+        // 1. Tu función original de filtrado (sin cambios)
         function filterCategory(category, element) {
             // UI: Cambiar item activo
             document.querySelectorAll('.dropdown-item').forEach(item => item.classList.remove('active'));
@@ -309,6 +310,24 @@
                 }
             });
         }
+
+        // 2. NUEVO: Código que se ejecuta apenas carga la página
+        document.addEventListener('DOMContentLoaded', function() {
+            // Leer la URL para ver si trae una categoría (ej: ?categoria=indumentaria)
+            const parametrosURL = new URLSearchParams(window.location.search);
+            const categoriaSolicitada = parametrosURL.get('categoria');
+
+            if (categoriaSolicitada) {
+                // Buscar el botón del menú desplegable que corresponde a esa categoría
+                // Buscamos el elemento <a> que en su onclick contenga el nombre de la categoría
+                const elementoMenu = document.querySelector(`.dropdown-item[onclick*="'${categoriaSolicitada}'"]`);
+
+                if (elementoMenu) {
+                    // Si lo encuentra, simula que el usuario hizo clic en él
+                    filterCategory(categoriaSolicitada, elementoMenu);
+                }
+            }
+        });
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

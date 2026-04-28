@@ -82,7 +82,7 @@
         <div class="row g-0 m-0 p-0"> {{-- g-0 y m-0 aseguran que la fila no tenga desbordes ni espacios --}}
 
             <div class="col-6 col-lg-3">
-                <a href="/productos" class="categoria-cuadrado"
+                <a href="/productos?categoria=indumentaria" class="categoria-cuadrado"
                     style="background-image: url('{{ asset('img/indumentaria.png') }}');">
                     <div class="categoria-overlay">
                         <span class="material-symbols-rounded mb-2">apparel</span>
@@ -92,7 +92,7 @@
             </div>
 
             <div class="col-6 col-lg-3">
-                <a href="/productos" class="categoria-cuadrado"
+                <a href="/productos?categoria=accesorios" class="categoria-cuadrado"
                     style="background-image: url('{{ asset('img/accesorios.png') }}');">
                     <div class="categoria-overlay">
                         <span class="material-symbols-rounded mb-2">personal_bag</span>
@@ -102,7 +102,7 @@
             </div>
 
             <div class="col-6 col-lg-3">
-                <a href="/productos" class="categoria-cuadrado"
+                <a href="/productos?categoria=libreria" class="categoria-cuadrado"
                     style="background-image: url('{{ asset('img/libreria.png') }}');">
                     <div class="categoria-overlay">
                         <span class="material-symbols-rounded mb-2">ink_pen</span>
@@ -112,7 +112,7 @@
             </div>
 
             <div class="col-6 col-lg-3">
-                <a href="/productos" class="categoria-cuadrado"
+                <a href="/productos?categoria=hogar" class="categoria-cuadrado"
                     style="background-image: url('{{ asset('img/hogar.png') }}');">
                     <div class="categoria-overlay">
                         <span class="material-symbols-rounded mb-2">water_bottle</span>
@@ -124,131 +124,150 @@
         </div>
     </section>
 
- {{-- Sección de Productos Destacados --}}
-<section class="py-5 bg-destacados overflow-hidden">
-    <div class="container position-relative">
-        <h2 class="display-5 fw-bold text-center mb-5">Destacados</h2>
+    {{-- Sección de Productos Destacados --}}
+    <section class="py-5 bg-destacados overflow-hidden">
+        <div class="container position-relative">
+            <h2 class="display-5 fw-bold text-center mb-5">Destacados</h2>
 
-        <div class="embla" id="emblaDestacados">
-            <div class="embla__container">
+            <div class="embla" id="emblaDestacados">
+                <div class="embla__container">
 
-               {{-- Producto 1: Mate --}}
-                <div class="embla__slide">
-                    <div class="card border-0 product-card bg-transparent text-center h-100 d-flex flex-column">
-                        <div class="contenedor-foto-producto shadow-sm mb-3 bg-white rounded p-2">
-                            <img src="{{ asset('img/mate.png') }}" class="img-fluid" alt="Mate UNNE">
-                        </div>
-                        <h6 class="text-muted fw-bold">Mate Térmico</h6>
-                        <p class="precio-producto text-success fw-bold mb-3">$18.000,00</p>
-                        
-                        {{-- Botón Agregar al Carrito --}}
-                        <div class="mt-auto">
-                            <a href="{{ url('/paginaenconstruccion') }} " class="btn btn-naranja w-100 d-flex align-items-center justify-content-center gap-2" style="padding: 10px;">
-                                <span class="material-symbols-rounded" style="font-size: 1.2rem;">shopping_cart</span>
-                                Agregar
-                            </a>
+                    {{-- Producto 1: Mate --}}
+                    <div class="embla__slide">
+                        <div class="card border-0 product-card bg-transparent text-center h-100 d-flex flex-column">
+                            <div class="contenedor-foto-producto shadow-sm mb-3 bg-white rounded p-2">
+                                <img src="{{ asset('img/mate.png') }}" class="img-fluid" alt="Mate UNNE">
+                            </div>
+                            <h6 class="text-muted fw-bold">Mate UNNE</h6>
+                            <p class="precio-producto text-success fw-bold mb-3">$18.000,00</p>
+
+                            {{-- Botón Agregar al Carrito --}}
+                            <div class="mt-auto">
+                                <a href="{{ url('/paginaenconstruccion') }} "
+                                    class="btn btn-naranja w-100 d-flex align-items-center justify-content-center gap-2"
+                                    style="padding: 10px;">
+                                    <span class="material-symbols-rounded"
+                                        style="font-size: 1.2rem;">shopping_cart</span>
+                                    Agregar
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                {{-- Producto 2: Paraguas --}}
-                <div class="embla__slide">
-                    <div class="card border-0 product-card bg-transparent text-center h-100 d-flex flex-column">
-                        <div class="contenedor-foto-producto shadow-sm mb-3 bg-white rounded p-2">
-                            <img src="{{ asset('img/paraguas.png') }}" class="img-fluid" alt="Paraguas Institucional">
-                        </div>
-                        <h6 class="text-muted fw-bold">Paraguas Institucional</h6>
-                        <p class="precio-producto text-success fw-bold mb-3">$27.000,00</p>
-                        
-                        <div class="mt-auto">
-                            <a href="{{ url('/paginaenconstruccion') }}" class="btn btn-naranja w-100 d-flex align-items-center justify-content-center gap-2" style="padding: 10px;">
-                                <span class="material-symbols-rounded" style="font-size: 1.2rem;">shopping_cart</span>
-                                Agregar
-                            </a>
+                    {{-- Producto 2: Paraguas --}}
+                    <div class="embla__slide">
+                        <div class="card border-0 product-card bg-transparent text-center h-100 d-flex flex-column">
+                            <div class="contenedor-foto-producto shadow-sm mb-3 bg-white rounded p-2">
+                                <img src="{{ asset('img/paraguas.png') }}" class="img-fluid"
+                                    alt="Paraguas Institucional">
+                            </div>
+                            <h6 class="text-muted fw-bold">Paraguas Institucional</h6>
+                            <p class="precio-producto text-success fw-bold mb-3">$27.000,00</p>
+
+                            <div class="mt-auto">
+                                <a href="{{ url('/paginaenconstruccion') }}"
+                                    class="btn btn-naranja w-100 d-flex align-items-center justify-content-center gap-2"
+                                    style="padding: 10px;">
+                                    <span class="material-symbols-rounded"
+                                        style="font-size: 1.2rem;">shopping_cart</span>
+                                    Agregar
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                {{-- Producto 3: Taza --}}
-                <div class="embla__slide">
-                    <div class="card border-0 product-card bg-transparent text-center h-100 d-flex flex-column">
-                        <div class="contenedor-foto-producto shadow-sm mb-3 bg-white rounded p-2">
-                            <img src="{{ asset('img/taza.png') }}" class="img-fluid" alt="Taza Clásica">
-                        </div>
-                        <h6 class="text-muted fw-bold">Taza Clásica</h6>
-                        <p class="precio-producto text-success fw-bold mb-3">$8.500,00</p>
-                        
-                        <div class="mt-auto">
-                            <a href="{{ url('/paginaenconstruccion') }}" class="btn btn-naranja w-100 d-flex align-items-center justify-content-center gap-2" style="padding: 10px;">
-                                <span class="material-symbols-rounded" style="font-size: 1.2rem;">shopping_cart</span>
-                                Agregar
-                            </a>
+                    {{-- Producto 3: Taza --}}
+                    <div class="embla__slide">
+                        <div class="card border-0 product-card bg-transparent text-center h-100 d-flex flex-column">
+                            <div class="contenedor-foto-producto shadow-sm mb-3 bg-white rounded p-2">
+                                <img src="{{ asset('img/taza.png') }}" class="img-fluid" alt="Taza Clásica">
+                            </div>
+                            <h6 class="text-muted fw-bold">Taza Clásica</h6>
+                            <p class="precio-producto text-success fw-bold mb-3">$8.500,00</p>
+
+                            <div class="mt-auto">
+                                <a href="{{ url('/paginaenconstruccion') }}"
+                                    class="btn btn-naranja w-100 d-flex align-items-center justify-content-center gap-2"
+                                    style="padding: 10px;">
+                                    <span class="material-symbols-rounded"
+                                        style="font-size: 1.2rem;">shopping_cart</span>
+                                    Agregar
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                {{-- Producto 4: Buzo --}}
-                <div class="embla__slide">
-                    <div class="card border-0 product-card bg-transparent text-center h-100 d-flex flex-column">
-                        <div class="contenedor-foto-producto shadow-sm mb-3 bg-white rounded p-2">
-                            <img src="{{ asset('img/indumentaria.png') }}" class="img-fluid" alt="Buzo Canguro">
-                        </div>
-                        <h6 class="text-muted fw-bold">Buzo Canguro</h6>
-                        <p class="precio-producto text-success fw-bold mb-3">$45.000,00</p>
-                        
-                        <div class="mt-auto">
-                            <a href="{{ url('/paginaenconstruccion') }}" class="btn btn-naranja w-100 d-flex align-items-center justify-content-center gap-2" style="padding: 10px;">
-                                <span class="material-symbols-rounded" style="font-size: 1.2rem;">shopping_cart</span>
-                                Agregar
-                            </a>
+                    {{-- Producto 4: Buzo --}}
+                    <div class="embla__slide">
+                        <div class="card border-0 product-card bg-transparent text-center h-100 d-flex flex-column">
+                            <div class="contenedor-foto-producto shadow-sm mb-3 bg-white rounded p-2">
+                                <img src="{{ asset('img/buzo.png') }}" class="img-fluid" alt="Buzo Canguro">
+                            </div>
+                            <h6 class="text-muted fw-bold">Buzo Canguro</h6>
+                            <p class="precio-producto text-success fw-bold mb-3">$45.000,00</p>
+
+                            <div class="mt-auto">
+                                <a href="{{ url('/paginaenconstruccion') }}"
+                                    class="btn btn-naranja w-100 d-flex align-items-center justify-content-center gap-2"
+                                    style="padding: 10px;">
+                                    <span class="material-symbols-rounded"
+                                        style="font-size: 1.2rem;">shopping_cart</span>
+                                    Agregar
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                {{-- Producto 5: Mochila --}}
-                <div class="embla__slide">
-                    <div class="card border-0 product-card bg-transparent text-center h-100 d-flex flex-column">
-                        <div class="contenedor-foto-producto shadow-sm mb-3 bg-white rounded p-2">
-                            <img src="{{ asset('img/accesorios.png') }}" class="img-fluid" alt="Mochila Urbana">
-                        </div>
-                        <h6 class="text-muted fw-bold">Mochila Urbana</h6>
-                        <p class="precio-producto text-success fw-bold mb-3">$32.000,00</p>
-                        
-                        <div class="mt-auto">
-                            <a href="{{ url('/paginaenconstruccion') }}" class="btn btn-naranja w-100 d-flex align-items-center justify-content-center gap-2" style="padding: 10px;">
-                                <span class="material-symbols-rounded" style="font-size: 1.2rem;">shopping_cart</span>
-                                Agregar
-                            </a>
+                    {{-- Producto 5: Mochila --}}
+                    <div class="embla__slide">
+                        <div class="card border-0 product-card bg-transparent text-center h-100 d-flex flex-column">
+                            <div class="contenedor-foto-producto shadow-sm mb-3 bg-white rounded p-2">
+                                <img src="{{ asset('img/mochila.png') }}" class="img-fluid" alt="Mochila Urbana">
+                            </div>
+                            <h6 class="text-muted fw-bold">Mochila Urbana</h6>
+                            <p class="precio-producto text-success fw-bold mb-3">$32.000,00</p>
+
+                            <div class="mt-auto">
+                                <a href="{{ url('/paginaenconstruccion') }}"
+                                    class="btn btn-naranja w-100 d-flex align-items-center justify-content-center gap-2"
+                                    style="padding: 10px;">
+                                    <span class="material-symbols-rounded"
+                                        style="font-size: 1.2rem;">shopping_cart</span>
+                                    Agregar
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
+                </div>
             </div>
+
+            {{-- Botones de Navegación --}}
+            <button class="btn-embla-nav btn-embla-prev" id="btnPrev">
+                <span class="material-symbols-rounded">chevron_left</span>
+            </button>
+            <button class="btn-embla-nav btn-embla-next" id="btnNext">
+                <span class="material-symbols-rounded">chevron_right</span>
+            </button>
+
         </div>
+    </section>
 
-        {{-- Botones de Navegación --}}
-        <button class="btn-embla-nav btn-embla-prev" id="btnPrev">
-            <span class="material-symbols-rounded">chevron_left</span>
-        </button>
-        <button class="btn-embla-nav btn-embla-next" id="btnNext">
-            <span class="material-symbols-rounded">chevron_right</span>
-        </button>
-
-    </div>
-</section>
-
- @include('partials.footer')
+    @include('partials.footer')
 
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    
+
     <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
     <script src="https://unpkg.com/embla-carousel-auto-scroll/embla-carousel-auto-scroll.umd.js"></script>
 
     <script>
         // Configuración del Typewriter
         const app = document.getElementById('typewriter');
-        const typewriter = new Typewriter(app, { loop: true, delay: 75 });
+        const typewriter = new Typewriter(app, {
+            loop: true,
+            delay: 75
+        });
         typewriter
             .pauseFor(500).typeString('<span style="color: #FF6600;">identidad</span>')
             .pauseFor(2000).deleteAll()
@@ -257,20 +276,22 @@
             .typeString('<span style="color: #FF6600;">futuro</span>')
             .pauseFor(2000).start();
 
-      // 1. Inicialización de Embla y el plugin
+        // 1. Inicialización de Embla y el plugin
         const emblaNode = document.getElementById('emblaDestacados');
-        const options = { loop: true }; 
-        
+        const options = {
+            loop: true
+        };
+
         // Configuramos la velocidad del AutoScroll
-        const autoScrollOptions = { 
-            speed: 2, 
+        const autoScrollOptions = {
+            speed: 2,
             playOnInit: true,
             stopOnInteraction: false // Lo ponemos en false porque manejaremos la interacción nosotros
         };
 
         const embla = EmblaCarousel(
-            emblaNode, 
-            options, 
+            emblaNode,
+            options,
             [EmblaCarouselAutoScroll(autoScrollOptions)]
         );
 
@@ -285,7 +306,7 @@
         const handleManualScroll = (direction) => {
             // A. Frenamos la cinta transportadora
             autoScroll.stop();
-            
+
             // B. Hacemos el salto manual a la tarjeta anterior o siguiente
             if (direction === 'prev') embla.scrollPrev();
             if (direction === 'next') embla.scrollNext();
@@ -302,7 +323,7 @@
         // Conectamos los botones a nuestra función
         btnPrev.addEventListener('click', () => handleManualScroll('prev'));
         btnNext.addEventListener('click', () => handleManualScroll('next'));
-
     </script>
 </body>
+
 </html>

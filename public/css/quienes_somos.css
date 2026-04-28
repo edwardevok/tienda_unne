@@ -91,11 +91,21 @@ h6 {
 }
 
 /* --- Sección Nuestro Equipo --- */
+
+svg {
+    filter: drop-shadow(0px -2px 0px var(--gris-claro));
+    display: block; /* Asegura que el SVG se comporte como un bloque sin espacios extra */
+    margin-bottom: -5px; /* Empuja el SVG hacia abajo para solaparlo con la sección */
+}
+
+/* --- Sección Nuestro Equipo --- */
 .seccion-equipo-azul {
     background-color: var(--azul-unne-suave);
     padding-top: 2rem;
     padding-bottom: 6rem;
-    margin-top: -2px; /* Solapamiento para evitar líneas blancas con el SVG */
+    margin-top: -1px; /* Mantenemos un margen leve por seguridad */
+    position: relative; /* Asegura que la capa respete el margen negativo */
+    z-index: 2; /* Pone la sección por encima de la "línea" sobrante del SVG */
 }
 
 .card-equipo-nueva {
