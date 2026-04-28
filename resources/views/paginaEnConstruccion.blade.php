@@ -36,10 +36,6 @@
 
             <img src="{{ asset('img/construccion.png') }}" alt="Carrito en Construcción" class="construction-image">
 
-            <div class="button-container">
-                <a href="{{ url('/productos') }}" class="btn-volver">Volver a Productos</a>
-            </div>
-
         </div>
     </div>
 

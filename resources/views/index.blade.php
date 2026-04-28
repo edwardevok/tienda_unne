@@ -43,10 +43,10 @@
 
     {{-- Banners Principales (Responsive) --}}
     <section class="banner-container">
-        <div class="d-none d-md-block">
+        <div class="d-none d-md-block">{{-- oculta y muestra en pantalla medianas - grandes --}}
             <img src="{{ asset('img/banner.png') }}" class="img-fluid w-100" alt="Tienda UNNE Desktop">
         </div>
-        <div class="d-block d-md-none">
+        <div class="d-block d-md-none">{{-- se muestra como bloque y se oculta para pantallas medianas en adelante --}}
             <img src="{{ asset('img/banner_movil.png') }}" class="img-fluid w-100" alt="Tienda UNNE Móvil">
         </div>
     </section>
