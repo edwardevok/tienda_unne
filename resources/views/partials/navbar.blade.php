@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg py-2 sticky-top" style="background-color: #021A54;" data-bs-theme="dark">
     <div class="container-fluid">
 
-        <a class="navbar-brand" href="{{ url('/') }}">
+        <a class="navbar-brand" href="{{ url('/index') }}">
             <img src="{{ asset('img/logo_unne.png') }}" alt="Logo UNNE" style="height: 65px; object-fit: contain;">
         </a>
 
