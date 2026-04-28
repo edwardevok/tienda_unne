@@ -70,7 +70,7 @@
 
         <div class="row g-4" id="products-grid">
 
-            <div class="col-6 col-md-4 col-lg-3 product-card" data-category="indumentaria">
+            <div class="col-12 col-md-4 col-lg-3 product-card" data-category="indumentaria">
                 <div class="card h-100 border-0 shadow-sm">
                     <img src="{{ asset('img/remera.png') }}" class="card-img-top p-2 square-img" alt="Remera">
                     <div class="card-body text-center">
@@ -81,7 +81,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6 col-md-4 col-lg-3 product-card" data-category="indumentaria">
+            <div class="col-12 col-md-4 col-lg-3 product-card" data-category="indumentaria">
                 <div class="card h-100 border-0 shadow-sm">
                     <img src="{{ asset('img/buzo.png') }}" class="card-img-top p-2 square-img" alt="Hoodie">
                     <div class="card-body text-center">
@@ -92,7 +92,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6 col-md-4 col-lg-3 product-card" data-category="indumentaria">
+            <div class="col-12 col-md-4 col-lg-3 product-card" data-category="indumentaria">
                 <div class="card h-100 border-0 shadow-sm">
                     <img src="{{ asset('img/campera.png') }}" class="card-img-top p-2 square-img" alt="Campera">
                     <div class="card-body text-center">
@@ -103,7 +103,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6 col-md-4 col-lg-3 product-card" data-category="indumentaria">
+            <div class="col-12 col-md-4 col-lg-3 product-card" data-category="indumentaria">
                 <div class="card h-100 border-0 shadow-sm">
                     <img src="{{ asset('img/Chomba.png') }}" class="card-img-top p-2 square-img" alt="Chomba">
                     <div class="card-body text-center">
@@ -115,7 +115,7 @@
                 </div>
             </div>
 
-            <div class="col-6 col-md-4 col-lg-3 product-card" data-category="accesorios">
+            <div class="col-12 col-md-4 col-lg-3 product-card" data-category="accesorios">
                 <div class="card h-100 border-0 shadow-sm">
                     <img src="{{ asset('img/mochila.png') }}" class="card-img-top p-2 square-img" alt="Mochila">
                     <div class="card-body text-center">
@@ -126,7 +126,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6 col-md-4 col-lg-3 product-card" data-category="accesorios">
+            <div class="col-12 col-md-4 col-lg-3 product-card" data-category="accesorios">
                 <div class="card h-100 border-0 shadow-sm">
                     <img src="{{ asset('img/gorra.png') }}" class="card-img-top p-2 square-img" alt="Gorro">
                     <div class="card-body text-center">
@@ -137,7 +137,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6 col-md-4 col-lg-3 product-card" data-category="accesorios">
+            <div class="col-12 col-md-4 col-lg-3 product-card" data-category="accesorios">
                 <div class="card h-100 border-0 shadow-sm">
                     <img src="{{ asset('img/totebag.png') }}" class="card-img-top p-2 square-img" alt="Tote">
                     <div class="card-body text-center">
@@ -148,7 +148,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6 col-md-4 col-lg-3 product-card" data-category="accesorios">
+            <div class="col-12 col-md-4 col-lg-3 product-card" data-category="accesorios">
                 <div class="card h-100 border-0 shadow-sm">
                     <img src="{{ asset('img/llavero.png') }}" class="card-img-top p-2 square-img" alt="Llavero">
                     <div class="card-body text-center">
@@ -159,7 +159,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6 col-md-4 col-lg-3 product-card" data-category="accesorios">
+            <div class="col-12 col-md-4 col-lg-3 product-card" data-category="accesorios">
                 <div class="card h-100 border-0 shadow-sm">
                     <img src="{{ asset('img/pulcera.png') }}" class="card-img-top p-2 square-img" alt="Pulsera">
                     <div class="card-body text-center">
@@ -171,7 +171,7 @@
                 </div>
             </div>
 
-            <div class="col-6 col-md-4 col-lg-3 product-card" data-category="libreria">
+            <div class="col-12 col-md-4 col-lg-3 product-card" data-category="libreria">
                 <div class="card h-100 border-0 shadow-sm">
                     <img src="{{ asset('img/agenda.png') }}" class="card-img-top p-2 square-img" alt="Agenda">
                     <div class="card-body text-center">
@@ -182,7 +182,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6 col-md-4 col-lg-3 product-card" data-category="libreria">
+            <div class="col-12 col-md-4 col-lg-3 product-card" data-category="libreria">
                 <div class="card h-100 border-0 shadow-sm">
                     <img src="{{ asset('img/carpeta.png') }}" class="card-img-top p-2 square-img" alt="Carpeta">
                     <div class="card-body text-center">
@@ -193,7 +193,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6 col-md-4 col-lg-3 product-card" data-category="libreria">
+            <div class="col-12 col-md-4 col-lg-3 product-card" data-category="libreria">
                 <div class="card h-100 border-0 shadow-sm">
                     <img src="{{ asset('img/lapicera.png') }}" class="card-img-top p-2 square-img" alt="Lapicera">
                     <div class="card-body text-center">
@@ -204,7 +204,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6 col-md-4 col-lg-3 product-card" data-category="libreria">
+            <div class="col-12 col-md-4 col-lg-3 product-card" data-category="libreria">
                 <div class="card h-100 border-0 shadow-sm">
                     <img src="{{ asset('img/mousepad.png') }}" class="card-img-top p-2 square-img" alt="Mousepad">
                     <div class="card-body text-center">
@@ -215,7 +215,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6 col-md-4 col-lg-3 product-card" data-category="libreria">
+            <div class="col-12 col-md-4 col-lg-3 product-card" data-category="libreria">
                 <div class="card h-100 border-0 shadow-sm">
                     <img src="{{ asset('img/stickers.png') }}" class="card-img-top p-2 square-img" alt="Stickers">
                     <div class="card-body text-center">
@@ -227,7 +227,7 @@
                 </div>
             </div>
 
-            <div class="col-6 col-md-4 col-lg-3 product-card" data-category="hogar">
+            <div class="col-12 col-md-4 col-lg-3 product-card" data-category="hogar">
                 <div class="card h-100 border-0 shadow-sm">
                     <img src="{{ asset('img/taza.png') }}" class="card-img-top p-2 square-img" alt="Taza">
                     <div class="card-body text-center">
@@ -238,7 +238,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6 col-md-4 col-lg-3 product-card" data-category="hogar">
+            <div class="col-12 col-md-4 col-lg-3 product-card" data-category="hogar">
                 <div class="card h-100 border-0 shadow-sm">
                     <img src="{{ asset('img/termo.png') }}" class="card-img-top p-2 square-img" alt="Termo">
                     <div class="card-body text-center">
@@ -249,7 +249,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6 col-md-4 col-lg-3 product-card" data-category="hogar">
+            <div class="col-12 col-md-4 col-lg-3 product-card" data-category="hogar">
                 <div class="card h-100 border-0 shadow-sm">
                     <img src="{{ asset('img/mate.png') }}" class="card-img-top p-2 square-img" alt="Mate">
                     <div class="card-body text-center">
@@ -260,7 +260,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6 col-md-4 col-lg-3 product-card" data-category="hogar">
+            <div class="col-12 col-md-4 col-lg-3 product-card" data-category="hogar">
                 <div class="card h-100 border-0 shadow-sm">
                     <img src="{{ asset('img/botella.png') }}" class="card-img-top p-2 square-img" alt="Botella">
                     <div class="card-body text-center">
@@ -271,7 +271,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6 col-md-4 col-lg-3 product-card" data-category="accesorios">
+            <div class="col-12 col-md-4 col-lg-3 product-card" data-category="accesorios">
                 <div class="card h-100 border-0 shadow-sm">
                     <img src="{{ asset('img/bufanda.png') }}" class="card-img-top p-2 square-img" alt="Bufanda">
                     <div class="card-body text-center">

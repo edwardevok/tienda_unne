@@ -35,17 +35,20 @@
 
             <div class="col-12 col-md-4">
                 <h5 class="fw-bold mb-4" style="color: #ffffff;">Contactanos</h5>
+
                 <p
                     class="mb-2 d-flex align-items-center justify-content-center justify-content-md-start gap-2 texto_foot">
                     <span class="material-symbols-rounded" style="font-size: 20px;">mail</span>
-                    tienda@unne.edu.ar
+                    <a href="mailto:tienda@unne.edu.ar" class="text-decoration-none" style="color: inherit;">
+                        tienda@unne.edu.ar
+                    </a>
                 </p>
+
                 <p
                     class="mb-2 d-flex align-items-center justify-content-center justify-content-md-start gap-2 texto_foot">
                     <span class="material-symbols-rounded" style="font-size: 20px;">location_on</span>
                     Campus Universitario, Corrientes/Resistencia
                 </p>
-
             </div>
 
         </div>
